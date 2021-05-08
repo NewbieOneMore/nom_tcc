@@ -2,10 +2,10 @@ create database bdCantina;
 
 use bdCantina;
 
--- Criação das tabelas
+-- CriaÃ§Ã£o das tabelas
 create table tblUsuario
 (
-    idUsuario int not null,
+    idUsuario int not null auto_increment,
      primary key (idUsuario),
   	nomeUsuario varchar (70),
    	emailUsuario varchar (70),
@@ -14,7 +14,7 @@ create table tblUsuario
 );
 create table tblPedido
 (
-	idPedido int not null,
+	idPedido int not null auto_increment,
 	 primary key (idPedido),
     idUsuario int not null,-- fk V
 	dataPedido date not null,
@@ -23,7 +23,7 @@ create table tblPedido
 );
 create table tblProduto
 (
-	idProduto int not null,
+	idProduto int not null auto_increment,
     primary key (idProduto),
 	nomeProduto varchar(70) not null,
 	precoProduto double not null,
@@ -33,7 +33,7 @@ create table tblProduto
 );
 create table tblPedidoProduto
 (
-	idPedidoProduto int not null,
+	idPedidoProduto int not null auto_increment,
     primary key (idPedidoProduto),
 	idPedido int not null,-- fk V
 	idProduto int not null,-- fk V
@@ -43,7 +43,7 @@ create table tblPedidoProduto
 );
 create table tblHistoricoEstoque
 (
-	idHistEstoque int not null,
+	idHistEstoque int not null auto_increment,
     primary key (idHistEstoque),
 	idPedidoProduto int not null,-- fk V
 	idProduto int not null,-- fk V
@@ -52,25 +52,25 @@ create table tblHistoricoEstoque
 );
 create table tblPagamento
 (
-	idPagamento int not null,
+	idPagamento int not null auto_increment,
     primary key (idPagamento),
 	formaPagamento varchar(20) not null
 );
 create table tblCategoria
 (
-	idCategoria int not null,
+	idCategoria int not null auto_increment,
     primary key (idCategoria),
 	nomeCategoria varchar(50) not null
 );
 create table tblPedidoPagamento
 (
-	idPedidoPagamento int not null,
+	idPedidoPagamento int not null auto_increment,
     primary key (idPedidoPagamento),
 	idPedido int not null,-- fk
 	idPagamento int not null,-- fk
 	valorPago double not null
 ); 
--- Criação dos relacionamentos
+-- CriaÃ§Ã£o dos relacionamentos
 -- pedido - usuario
 alter table tblpedido
 add constraint FK_tblPedido_tblUsuario

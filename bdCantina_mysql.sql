@@ -7,10 +7,12 @@ create table tblUsuario
 (
     idUsuario int not null auto_increment,
      primary key (idUsuario),
-  	nomeUsuario varchar (70),
-   	emailUsuario varchar (70),
-    senhaUsuario varchar (30),
-    admUsuario bit not null
+  	nomeUsuario varchar (70) not null,
+   	emailUsuario varchar (70) not null,
+    	senhaUsuario varchar (30) not null,
+	authkeyUsuario varchar (45) not null,
+	accesstokenUsuario varchar (45) not null,
+   	admUsuario bit not null
 );
 create table tblPedido
 (

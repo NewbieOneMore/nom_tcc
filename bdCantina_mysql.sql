@@ -1,3 +1,4 @@
+drop database bdCantina;
 create database bdCantina;
 
 use bdCantina;
@@ -111,23 +112,17 @@ foreign key (idPedido) references tblPedido (idPedido);
 alter table tblPedidoPagamento
 add constraint FK_tblPedidoPagamento_tblPagamento
 foreign key (idPagamento) references tblPagamento (idPagamento);
--- inserindo valores exemplares na tabela produtos
-/*
-id_tblProduto int primary key identity(1,1) not null,
-nome_tblProduto varchar not null,
-preco_tblProduto float not null,
-imagemUrl_tblProduto varchar not null,
-valiade_tblProduto date not null,
-qtdEstoque_tblProduto int not null,
 
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-insert into tblProduto values ('')
-*/
+
+-- inserts tblCategoria
+INSERT INTO `tblcategoria`(`nomeCategoria`) VALUES ('Bebida');
+INSERT INTO `tblcategoria`(`nomeCategoria`) VALUES ('Salgado');
+INSERT INTO `tblcategoria`(`nomeCategoria`) VALUES ('Doce');
+INSERT INTO `tblcategoria`(`nomeCategoria`) VALUES ('Salgadinho');
+
+-- inserts tblPagamento
+
+INSERT INTO `tblpagamento`(`formaPagamento`) VALUES ('À vista');
+INSERT INTO `tblpagamento`(`formaPagamento`) VALUES ('Crédito');
+INSERT INTO `tblpagamento`(`formaPagamento`) VALUES ('Débito');
+INSERT INTO `tblpagamento`(`formaPagamento`) VALUES ('Pix');

@@ -22,7 +22,8 @@ create table tblPedido
     idUsuario int not null,-- fk V
 	dataPedido date not null,
 	precoPedido double not null,
-	pagPedido bit not null
+	pagPedido bit not null,
+	retPedido bit not null
 );
 create table tblProduto
 (

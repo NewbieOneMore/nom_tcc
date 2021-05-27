@@ -6,6 +6,8 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\TblPedido;
 
+
+
 /**
  * TblPedidoSearch represents the model behind the search form of `app\models\TblPedido`.
  */
@@ -17,8 +19,8 @@ class TblPedidoSearch extends TblPedido
     public function rules()
     {
         return [
-            [['idPedido', 'idUsuario', 'idPagamento'], 'integer'],
-            [['dataPedido'], 'safe'],
+            [['idPedido', 'idPagamento'], 'integer'],
+            [['dataPedido', 'idUsuario'], 'safe'],
             [['precoPedido'], 'number'],
             [['pagPedido'], 'boolean'],
         ];
@@ -58,15 +60,18 @@ class TblPedidoSearch extends TblPedido
             return $dataProvider;
         }
 
+        $query->joinWith('usuario');
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idPedido' => $this->idPedido,
-            'idUsuario' => $this->idUsuario,
             'dataPedido' => $this->dataPedido,
             'precoPedido' => $this->precoPedido,
             'pagPedido' => $this->pagPedido,
             'idPagamento' => $this->idPagamento,
         ]);
+        
+        $query->andFilterWhere(['like', 'nomeUsuario', $this->idUsuario]);
 
         return $dataProvider;
     }

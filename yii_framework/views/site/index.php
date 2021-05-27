@@ -20,21 +20,21 @@ $this->title = 'Cantina do Henrique';
 
                 <p>Tabela com os pedidos pendentes e pedidos já feitos.</p>
 
-                <p><a class="btn btn-lg btn-success" href="/yii_framework/web/index.php/tbl-pedido">Pedidos</a></p>
+                <p><a class="btn btn-lg btn-success" href="/nom_tcc/yii_framework/web/index.php/tbl-pedido">Pedidos</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Produtos</h2>
 
                 <p>Tabela com todos os produtos já registrados</p>
 
-                <p><a class="btn btn-lg btn-success" href="/yii_framework/web/index.php/tbl-produto">Produtos</a></p>
+                <p><a class="btn btn-lg btn-success" href="/nom_tcc/yii_framework/web/index.php/tbl-produto">Produtos</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Usuários</h2>
 
                 <p>Todos os usuários já cadastrados no sistema.</p>
 
-                <p><a class="btn btn-lg btn-success" href="/yii_framework/web/index.php/tbl-usuario">Usuários</a></p>
+                <p><a class="btn btn-lg btn-success" href="/nom_tcc/yii_framework/web/index.php/tbl-usuario">Usuários</a></p>
             </div>
             <!-- <div class="col-lg-4"> -->
         </div>

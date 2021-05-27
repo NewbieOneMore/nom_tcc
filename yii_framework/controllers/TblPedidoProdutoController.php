@@ -88,7 +88,7 @@ class TblPedidoProdutoController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             /* return $this->redirect(['index', 'id' => $model->idPedidoProduto]); */
-            return Yii::$app->getResponse()->redirect('http://localhost/yii_framework/web/index.php?r=tbl-pedido');
+            return Yii::$app->getResponse()->redirect('http://localhost/nom_tcc/yii_framework/web/index.php?r=tbl-pedido');
         }
 
         return $this->render('update', [

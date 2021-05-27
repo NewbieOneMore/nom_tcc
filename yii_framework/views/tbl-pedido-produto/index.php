@@ -95,5 +95,4 @@ $this->title = 'Consultar Pedidos';
     ]); ?>
     <?php Pjax::end(); ?>
 
-
 </div>

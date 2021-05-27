@@ -8,6 +8,7 @@ use app\models\TblUsuario;
 use app\models\TblPagamento;
 use yii\bootstrap\Modal;
 use yii\helpers\Url;
+use yii\widgets\Pjax;
 
 
 /* @var $this yii\web\View */
@@ -39,7 +40,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         Modal::end();
     ?>
-
+    
+    <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -144,6 +146,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]); ?>
+    <?php Pjax::end(); ?>
 
 
 </div>

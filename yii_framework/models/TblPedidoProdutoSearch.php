@@ -17,9 +17,10 @@ class TblPedidoProdutoSearch extends TblPedidoProduto
     public function rules()
     {
         return [
-            [['idPedidoProduto', 'idPedido', 'idProduto', 'qtdProduto'], 'integer'],
+            [['idPedidoProduto', 'idPedido', 'qtdProduto'], 'integer'],
             [['valorProduto'], 'number'],
             [['retProduto'], 'boolean'],
+            [['idProduto'], 'safe'],
         ];
     }
 
@@ -57,15 +58,19 @@ class TblPedidoProdutoSearch extends TblPedidoProduto
             return $dataProvider;
         }
 
+        $query->joinWith('produto');
+
+
         // grid filtering conditions
         $query->andFilterWhere([
             'idPedidoProduto' => $this->idPedidoProduto,
             'idPedido' => $this->idPedido,
-            'idProduto' => $this->idProduto,
             'qtdProduto' => $this->qtdProduto,
             'valorProduto' => $this->valorProduto,
             'retProduto' => $this->retProduto,
         ]);
+        
+        $query->andFilterWhere(['like', 'nomeProduto', $this->idProduto]);
 
         return $dataProvider;
     }

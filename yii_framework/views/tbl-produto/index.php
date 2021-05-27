@@ -9,6 +9,8 @@ use dosamigos\datepicker\DatePicker;
 use yii\bootstrap\Modal;
 use yii\helpers\Url;
 use yii\controllers\TblCategoriaController;
+use yii\widgets\Pjax;
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\TblProdutoSearch */
@@ -77,6 +79,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
+    <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -173,6 +176,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]); ?>
+    <?php Pjax::end(); ?>
 
 
 </div>

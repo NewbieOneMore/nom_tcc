@@ -72,7 +72,7 @@ class TblProdutoController extends Controller
             return $this->redirect(['view', 'id' => $model->idProduto]);
         }
 
-        return $this->render('create', [
+        return $this->renderAjax('create', [
             'model' => $model,
         ]);
     }

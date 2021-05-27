@@ -22,17 +22,17 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::button('Adicionar Produto', ['value'=>Url::to('index.php?r=tbl-produto/create'), 
+        <?= Html::button('Adicionar Produto', ['value'=>Url::to('tbl-produto/create'), 
                                                 'class' => 'btn btn-success', 
                                                 'id'=>'modalButton']) ?>
 
-        <?= Html::button('Excluir Categoria', ['value'=>Url::to('index.php?r=tbl-categoria/index'), 
+        <?= Html::button('Excluir Categoria', ['value'=>Url::to('tbl-categoria'), 
                                                 'class' => 'btn btn-danger', 
                                                 'id'=>'modalButtonExcluirCategoria', 
                                                 'style'=>'float: right;
                                                           margin-left: 5px;']) ?>
 
-        <?= Html::button('Adicionar Categoria', ['value'=>Url::to('index.php?r=tbl-categoria/create'), 
+        <?= Html::button('Adicionar Categoria', ['value'=>Url::to('tbl-categoria/create'), 
                                                 'class' => 'btn btn-primary', 
                                                 'id'=>'modalButtonCategoria', 
                                                 'style'=>'float: right;']) ?>

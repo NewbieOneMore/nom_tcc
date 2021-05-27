@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
     
     <p>
-        <?= Html::button('Consultar Pedido', ['value'=>Url::to('index.php?r=tbl-pedido-produto/index'), 
+        <?= Html::button('Consultar Pedido', ['value'=>Url::to('tbl-pedido-produto'), 
                                                 'class' => 'btn btn-success', 
                                                 'id'=>'modalButtonPedidoProduto']) ?>
     </p>

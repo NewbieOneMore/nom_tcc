@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use tcdent\php,restclient\RestClient;
 
 class SiteController extends Controller
 {
@@ -124,5 +125,21 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    public function actionFeed()
+    {
+        $api = new \RestClient([
+            'base_url' => 'http://localhost/yii_framework/web/api',
+            'headers' => [
+                'Accept' => 'application/json' 
+            ]
+        ]);
+
+        $result = $api->get('/default');
+
+        echo '<pre>'; print_r($result->response); die;
+
+        return $this->render('feed');
     }
 }

@@ -27,12 +27,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '3ad4669f3b185902f1b4b078291eb877b3a56795',
     'name' => 'yiisoft/yii2-app-basic',
   ),
   'versions' => 
@@ -789,6 +789,15 @@ private static $installed = array (
       ),
       'reference' => '76546cbeddd0a9540b4e4e57eddeec3e9bb444a5',
     ),
+    'tcdent/php-restclient' => 
+    array (
+      'pretty_version' => '0.1.7',
+      'version' => '0.1.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4522e8518eaef770d715977fcb45f187f8ad7499',
+    ),
     'theseer/tokenizer' => 
     array (
       'pretty_version' => '1.2.0',
@@ -818,12 +827,12 @@ private static $installed = array (
     ),
     'yiisoft/yii2-app-basic' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '3ad4669f3b185902f1b4b078291eb877b3a56795',
     ),
     'yiisoft/yii2-bootstrap' => 
     array (

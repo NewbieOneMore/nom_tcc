@@ -19,6 +19,16 @@ $this->title = 'Cardápio';
 
             //'idProduto',
             //'nomeProduto',
+            ['class' => 'yii\grid\CheckboxColumn',
+                'contentOptions' => [
+                    'style' => 'text-align: center;'
+                ],
+                'headerOptions' => [
+                    'style' => 'text-align: center;
+                                width: 5%;'
+                ],
+                'header' => false,
+            ],
             [
                 'attribute' => 'nomeProduto',
                 'contentOptions' => [

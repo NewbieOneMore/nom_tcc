@@ -8,6 +8,8 @@ use app\models\TblPedidoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use tcdent\php,restclient\RestClient;
+
 
 /**
  * TblPedidoController implements the CRUD actions for TblPedido model.
@@ -107,6 +109,34 @@ class TblPedidoController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+
+    public function actionFeed()
+    {
+        $api = new \RestClient([
+            'base_url' => 'http://localhost/nom_tcc/yii_framework/web/api',
+            'headers' => [
+                'Accept' => 'application/json' 
+            ]
+        ]);
+        
+        $hoje = date("Y-m-d");
+        $quantidade1 = 1;
+        $produto1 = 4;
+        $valortotal = $produto1*$quantidade1;
+        $api->post('pedido/create', [
+            
+            'idUsuario' => '3',
+            'dataPedido' => $hoje,
+            'precoPedido' => $valortotal,
+            'pagPedido' => 0,
+            'idPagamento' => '2'
+        ]);
+
+        $result = $api->get('/pedido');
+        echo '<pre>'; print_r($result->response); die;
+
+        return $this->render('feed');
     }
 
     /**

@@ -13,6 +13,7 @@ $config = [
     ],
     'language' => 'pt_BR',
     'sourceLanguage' => 'pt-BR',
+    'timeZone' => 'America/Sao_Paulo', 
     
     'components' => [
         'request' => [

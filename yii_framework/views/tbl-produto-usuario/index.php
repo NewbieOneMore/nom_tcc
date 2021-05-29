@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
+
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -66,5 +68,9 @@ $this->title = 'Cardápio';
         ],
     ]); ?>
 
+
+<?= Html::button('Finalizar pedido', ['class' => 'btn btn-primary', 
+                                        'id'=>'btnAdicionarPedido', 
+                                        'style'=>'float: right;']) ?>
 
 </div>

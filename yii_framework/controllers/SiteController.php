@@ -126,33 +126,4 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-
-    public function actionFeed()
-    {
-        $api = new \RestClient([
-            'base_url' => 'http://localhost/nom_tcc/yii_framework/web/api',
-            'headers' => [
-                'Accept' => 'application/json' 
-            ]
-        ]);
-        
-        $hoje = date("Y-m-d");
-        $quantidade = 2;
-        $produto1 = 6;
-        $produto2 = 4;
-        $valortotal = $produto1*$quantidade+$produto2;
-        /* $api->post('default/create', [
-            
-            'idUsuario' => '3',
-            'dataPedido' => $hoje,
-            'precoPedido' => $valortotal,
-            'pagPedido' => 0,
-            'idPagamento' => '2'
-        ]); */
-
-        $result = $api->get('/default');
-        echo '<pre>'; print_r($result->response); die;
-
-        return $this->render('feed');
-    }
 }

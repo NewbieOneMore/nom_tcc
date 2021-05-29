@@ -35,6 +35,13 @@ $(function(){
     });
 });
 
+$(function(){
+    //Pegar o click do botao "Consultar pedido" 
+    $('#btnAdicionarCarrinho').click(function(){
+        alert('teste');
+    });
+});
+
 //Cardápio
 var json;
 $(document).ready(function () {//Esperar o documento HTML terminar de ser carregado

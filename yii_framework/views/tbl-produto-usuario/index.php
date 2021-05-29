@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\widgets\ListView;
 use yii\helpers\Url;
 
 
@@ -14,58 +15,12 @@ $this->title = 'Cardápio';
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= GridView::widget([
+    <?= ListView::widget([
         'dataProvider' => $dataProvider,
-        'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
-
-            //'idProduto',
-            //'nomeProduto',
-            ['class' => 'yii\grid\CheckboxColumn',
-                'contentOptions' => [
-                    'style' => 'text-align: center;'
-                ],
-                'headerOptions' => [
-                    'style' => 'text-align: center;
-                                width: 5%;'
-                ],
-                'header' => false,
-            ],
-            [
-                'attribute' => 'nomeProduto',
-                'contentOptions' => [
-                    'style' => 'text-align: left;'
-                ],
-                'headerOptions' => [
-                    'style' => 'text-align: center;'
-                ],
-            ],
-            //'precoProduto',
-            [
-                'attribute' => 'precoProduto',
-                'contentOptions' => [
-                    'style' => 'text-align: right;'
-                ],
-                'headerOptions' => [
-                    'style' => 'text-align: center;'
-                ],
-                'format' => ['currency']
-            ],
-            //'valProduto',
-            //'estqProduto',
-            [
-                'attribute' => 'estqProduto',
-                'contentOptions' => [
-                    'style' => 'text-align: right;'
-                ],
-                'headerOptions' => [
-                    'style' => 'text-align: center;'
-                ],
-            ],
-            //'idCategoria',
-
-            //['class' => 'yii\grid\ActionColumn'],
-        ],
+        'itemView' => '_item',
+        'separator' => "<hr/>",
+        //'options' => ['class' => 'list-view well'],
+        'itemOptions' => ['class' => 'well']
     ]); ?>
 
 

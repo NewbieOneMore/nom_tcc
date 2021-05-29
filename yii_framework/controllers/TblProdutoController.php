@@ -126,4 +126,19 @@ class TblProdutoController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+
+
+    /**
+     * Lists all Produtos models in a list view.
+     * @return mixed
+     */
+    public function actionList()
+    {
+        $searchModel = new TblProdutoSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        return $this->render('list', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
 }

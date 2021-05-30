@@ -19,22 +19,48 @@ $total = \Yii::$app->cart->getCost();
     <?php 
         $precoTotal = 0;
     ?>
+    <div class="row" style="margin-top: 30px; border-radius: 5px;">
+        <div class="col-md-3" style="background-color: #ebebeb;">
+            <h2><strong>Produto</strong></h2>
+        </div>
 
+        <div class="col-md-3" style="background-color: #ebebeb;">
+            <h2><strong>Preço</strong></h2>
+        </div>
+
+        <div class="col-md-3" style="background-color: #ebebeb;">
+            <h2><strong>Quantidade</strong></h2>
+        </div>
+
+        <div class="col-md-3" style="background-color: #ebebeb;">
+            <h2><strong>Ações</strong></h2>
+        </div>
+    </div>
 
     <?php foreach($data as $row) {?>
 
     <div class="row" style="margin-top: 30px;">
         <div class="col-md-3">
-            <?= $row->nomeProduto ?>
+            <h3><?= $row->nomeProduto ?></h3>
         </div>
         <div class="col-md-3">
-            <p>R$<?= number_format($row->precoProduto, 2,",",".");?></p>
+            <h3>R$<?= number_format($row->precoProduto, 2,",",".");?></h3>
         </div>
         <div class="col-md-3">
-            <?= $row->estqProduto ?>
+            <div class="input-group quantity" style="display: flex; margin-top: 15px;">
+                <div class="input-group-prepend decrement-btn" style="cursor: pointer;">
+                    <span class="btn btn-info"><strong>-</strong></span>
+                </div>
+                
+                <input type="text" class="qty-input form-control" maxlength="2" value="1" style="text-align: center; width:30%;">
+                
+                <div class="input-group-append increment-btn" style="cursor: pointer">
+                    <span class="btn btn-info"><strong>+</strong></span>
+                </div>
+            </div>
         </div>
         <div class="col-md-3">
-            <a href="">Remover</a>
+            <?= Html::a('Remover', ['delete', 'idProduto' => $row->idProduto], ['class'=>'btn btn-danger', 'style'=>'margin-top: 15px;'])?>
         </div>
         <?php 
             $precoTotal = $precoTotal + $row->precoProduto;
@@ -44,11 +70,9 @@ $total = \Yii::$app->cart->getCost();
 
     <div class="row" style="margin-top: 30px;">
         <div class="col-md-4">
-            <h3>Total: R$ <?= number_format($precoTotal, 2,",","."); ?></h3> 
+            <h3><strong>Total: R$ <?= number_format($precoTotal, 2,",","."); ?></strong></h3> 
         </div>
     </div>
-
         
         <?= Html::a('Finalizar pedido', ['checkout'], ['class'=>'btn btn-success'])?>
-
 </div>

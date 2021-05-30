@@ -11,6 +11,7 @@ use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 use yz\shoppingcart\ShoppingCart;
 
 
@@ -147,12 +148,9 @@ class TblProdutoUsuarioController extends Controller
             $pedidoproduto = new TblPedidoProduto();
             $pedidoproduto->idPedido = $pedido->idPedido;
             $pedidoproduto->idProduto = $data->id;
-
             $pedidoproduto->save();
         }
-
         $cart->removeAll();
-
         return $this->render(['tbl-produto-usuario']);
     }
 

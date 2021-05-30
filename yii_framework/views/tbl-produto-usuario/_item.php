@@ -10,9 +10,6 @@ use yii\helpers\Html;
     <p> 
         Estoque: <?= $model->estqProduto ?>
     </p>
-
-    <!-- <?= Html::button('Adicionar ao carrinho', ['class' => 'btn btn-success', 
-                                        'id'=>'btnAdicionarCarrinho']) ?> -->
     
     <?= Html::a('+ Adicionar ao Carrinho', ['add-to-cart', 'idProduto' => $model->idProduto], ['class'=>'btn btn-primary'])?>
 

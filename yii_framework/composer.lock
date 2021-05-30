@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f0cb21782d2d4620aa044339ef3a19c",
+    "content-hash": "398570f07e2de3242c779f9620ebc118",
     "packages": [
         {
             "name": "2amigos/yii2-date-picker-widget",
@@ -272,6 +272,57 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "devanych/yii2-cart",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devanych/yii2-cart.git",
+                "reference": "a17190c8c6552a82aa6f4646b83f8123748fe1a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devanych/yii2-cart/zipball/a17190c8c6552a82aa6f4646b83f8123748fe1a3",
+                "reference": "a17190c8c6552a82aa6f4646b83f8123748fe1a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "yiisoft/yii2": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "devanych\\cart\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Evgeniy Zyubin",
+                    "email": "info@zyubin.ru",
+                    "homepage": "https://zyubin.ru"
+                }
+            ],
+            "description": "Shopping cart for Yii2",
+            "keywords": [
+                "yii2",
+                "yii2-cart",
+                "yii2-extension",
+                "yii2-shopping-cart"
+            ],
+            "support": {
+                "issues": "https://github.com/devanych/yii2-cart/issues?state=open",
+                "source": "https://github.com/devanych/yii2-cart"
+            },
+            "time": "2019-10-18T10:25:54+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -589,6 +640,48 @@
                 "source": "https://github.com/kartik-v/yii2-money/tree/master"
             },
             "time": "2018-10-09T12:17:48+00:00"
+        },
+        {
+            "name": "omnilight/yii2-shopping-cart",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/omnilight/yii2-shopping-cart.git",
+                "reference": "afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/omnilight/yii2-shopping-cart/zipball/afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c",
+                "reference": "afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yz\\shoppingcart\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pavel Agalecky",
+                    "email": "pavel.agalecky@gmail.com"
+                }
+            ],
+            "description": "Yii2 extension that adds shopping cart functions",
+            "keywords": [
+                "shopping cart",
+                "yii"
+            ],
+            "support": {
+                "issues": "https://github.com/omnilight/yii2-shopping-cart/issues",
+                "source": "https://github.com/omnilight/yii2-shopping-cart/tree/master"
+            },
+            "time": "2018-06-12T14:23:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

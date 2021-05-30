@@ -15,16 +15,16 @@ use yii\db\ActiveRecord;
  * @property int $estqProduto
  * @property int $idCategoria
  */
-class TblProduto extends \yii\db\ActiveRecord
+class TblProduto extends \yii\db\ActiveRecord 
 {
     /**
      * {@inheritdoc}
      */
-    public static function tableName()
-    {
-        return 'tblProduto';
-    }
 
+    public static function tableName()
+     {
+         return 'tblProduto';
+     }
     /**
      * {@inheritdoc}
      */

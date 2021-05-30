@@ -3,14 +3,17 @@ use yii\helpers\Html;
 ?>
 <div class="produtos">
     <h2><?= Html::encode($model->nomeProduto) ?></h2>
-    <h3> 
-        Preço: R$<?= $model->precoProduto ?>
-    </h3>
+    <strong> 
+        Preço: R$<?= number_format($model->precoProduto, 2,",",".");?>
+    </strong>
 
     <p> 
         Estoque: <?= $model->estqProduto ?>
     </p>
 
-    <?= Html::button('Adicionar ao carrinho', ['class' => 'btn btn-success', 
-                                        'id'=>'btnAdicionarCarrinho']) ?>
+    <!-- <?= Html::button('Adicionar ao carrinho', ['class' => 'btn btn-success', 
+                                        'id'=>'btnAdicionarCarrinho']) ?> -->
+    
+    <?= Html::a('+ Adicionar ao Carrinho', ['add-to-cart', 'idProduto' => $model->idProduto], ['class'=>'btn btn-primary'])?>
+
 </div>

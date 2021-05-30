@@ -31,6 +31,7 @@ class ComposerStaticInit694f430212f1c3c63a7d3efbe905ff41
     public static $prefixLengthsPsr4 = array (
         'y' => 
         array (
+            'yz\\shoppingcart\\' => 16,
             'yii\\swiftmailer\\' => 16,
             'yii\\jui\\' => 8,
             'yii\\gii\\' => 8,
@@ -52,6 +53,7 @@ class ComposerStaticInit694f430212f1c3c63a7d3efbe905ff41
         'd' => 
         array (
             'dosamigos\\datepicker\\' => 21,
+            'devanych\\cart\\' => 14,
         ),
         'c' => 
         array (
@@ -121,6 +123,10 @@ class ComposerStaticInit694f430212f1c3c63a7d3efbe905ff41
     );
 
     public static $prefixDirsPsr4 = array (
+        'yz\\shoppingcart\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/omnilight/yii2-shopping-cart',
+        ),
         'yii\\swiftmailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer/src',
@@ -170,6 +176,10 @@ class ComposerStaticInit694f430212f1c3c63a7d3efbe905ff41
         'dosamigos\\datepicker\\' => 
         array (
             0 => __DIR__ . '/..' . '/2amigos/yii2-date-picker-widget/src',
+        ),
+        'devanych\\cart\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/devanych/yii2-cart',
         ),
         'cebe\\markdown\\' => 
         array (

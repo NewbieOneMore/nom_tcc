@@ -21,7 +21,9 @@
         "yiisoft/yii2-jui": "^2.0",
         "2amigos/yii2-date-picker-widget": "~1.0",
         "kartik-v/yii2-money": "*",
-        "tcdent/php-restclient": "^0.1.7"
+        "tcdent/php-restclient": "^0.1.7",
+        "devanych/yii2-cart": "*",
+        "omnilight/yii2-shopping-cart": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

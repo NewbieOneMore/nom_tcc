@@ -59,6 +59,11 @@ $config = [
                 'controller' => 'api/default']
             ],
         ],
+
+        'cart' => [
+            'class' => 'yz\shoppingcart\ShoppingCart',
+            'cartId' => 'my_application_cart',
+        ]
        
         
     ],

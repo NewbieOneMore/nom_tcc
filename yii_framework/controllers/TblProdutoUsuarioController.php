@@ -3,11 +3,16 @@
 namespace app\controllers;
 
 use Yii;
+use app\controllers\TblPedidoProduto;
 use app\models\TblProdutoUsuario;
+use app\models\TblUsuario;
+use app\models\TblPedido;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yz\shoppingcart\ShoppingCart;
+
 
 /**
  * TblProdutoUsuarioController implements the CRUD actions for TblProdutoUsuario model.
@@ -108,6 +113,49 @@ class TblProdutoUsuarioController extends Controller
 
         return $this->redirect(['index']);
     }
+
+    //Carrinho
+    public function actionAddToCart($idProduto)
+    {
+        $cart = new ShoppingCart();
+
+        $model = TblProdutoUsuario::findOne($idProduto);
+        if ($model) {
+            $cart->put($model, 1);
+            $data = $cart->getPositions();
+            return $this->render('cart', [
+                'data' => $data,
+            ]);
+        }
+        throw new NotFoundHttpException();
+    }
+
+    public function actionCheckout()
+    {
+        $cart = new ShoppingCart();
+
+        $pedido = new TblPedido();
+
+        $idUsuario = TblUsuario::find()->where(['idUsuario'=>Yii::$app->user->identity->id])->one();
+
+        $pedido->dataPedido = date('Y-m-d');
+        $model->idUsuario = $idUsuario->idUsuario;
+
+        $pedido->save();
+
+        foreach($cart->getPositions() as $data){
+            $pedidoproduto = new TblPedidoProduto();
+            $pedidoproduto->idPedido = $pedido->idPedido;
+            $pedidoproduto->idProduto = $data->id;
+
+            $pedidoproduto->save();
+        }
+
+        $cart->removeAll();
+
+        return $this->render(['tbl-produto-usuario']);
+    }
+
 
     /**
      * Finds the TblProdutoUsuario model based on its primary key value.

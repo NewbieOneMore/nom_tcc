@@ -84,4 +84,22 @@ return array (
       '@kartik/money' => $vendorDir . '/kartik-v/yii2-money/src',
     ),
   ),
+  'devanych/yii2-cart' => 
+  array (
+    'name' => 'devanych/yii2-cart',
+    'version' => '1.2.5.0',
+    'alias' => 
+    array (
+      '@devanych/cart' => $vendorDir . '/devanych/yii2-cart',
+    ),
+  ),
+  'omnilight/yii2-shopping-cart' => 
+  array (
+    'name' => 'omnilight/yii2-shopping-cart',
+    'version' => '1.3.0.0',
+    'alias' => 
+    array (
+      '@yz/shoppingcart' => $vendorDir . '/omnilight/yii2-shopping-cart',
+    ),
+  ),
 );

@@ -3,6 +3,9 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yz\shoppingcart\CartPositionInterface;
+use yz\shoppingcart\CartPositionTrait;
 
 /**
  * This is the model class for table "tblProduto".
@@ -14,11 +17,24 @@ use Yii;
  * @property int $estqProduto
  * @property int $idCategoria
  */
-class TblProdutoUsuario extends \yii\db\ActiveRecord
+class TblProdutoUsuario extends \yii\db\ActiveRecord implements CartPositionInterface
 {
     /**
      * {@inheritdoc}
      */
+
+    use CartPositionTrait;
+
+    public function getPrice()
+    {
+        return $this->precoProduto;
+    }
+
+    public function getId()
+    {
+        return $this->idProduto;
+    }
+
     public static function tableName()
     {
         return 'tblProduto';
@@ -52,5 +68,21 @@ class TblProdutoUsuario extends \yii\db\ActiveRecord
             'estqProduto' => 'Estoque',
             'idCategoria' => 'Id Categoria',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+    */ 
+    public function getCategoria()
+    {
+        return $this->hasOne(Tblcategoria::classname(), ['idCategoria' => 'idCategoria']);
+    }
+    
+    /**
+     * @return \yii\db\ActiveQuery
+    */
+    public function getProduto()
+    {
+        return $this->hasMany(TblProduto::classname(), ['idCategoria' => 'idCategoria']);
     }
 }

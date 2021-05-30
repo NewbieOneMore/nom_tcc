@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => '1.8.x-dev',
+    'version' => '1.8.9999999.9999999-dev',
     'aliases' => 
     array (
     ),
-    'reference' => '3ad4669f3b185902f1b4b078291eb877b3a56795',
+    'reference' => 'eb2266b140ae46cd50ef07b0aa25c0ccdf810230',
     'name' => 'yiisoft/yii2-app-basic',
   ),
   'versions' => 
@@ -191,6 +191,15 @@
       ),
       'reference' => 'fa0bb946b6d61279f461bcc5a677ac0ed5eab9b3',
     ),
+    'devanych/yii2-cart' => 
+    array (
+      'pretty_version' => 'v1.2.5',
+      'version' => '1.2.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a17190c8c6552a82aa6f4646b83f8123748fe1a3',
+    ),
     'doctrine/instantiator' => 
     array (
       'pretty_version' => '1.4.0',
@@ -275,6 +284,15 @@
       array (
         0 => '1.10.2',
       ),
+    ),
+    'omnilight/yii2-shopping-cart' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c',
     ),
     'opis/closure' => 
     array (
@@ -801,12 +819,12 @@
     ),
     'yiisoft/yii2-app-basic' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => '1.8.x-dev',
+      'version' => '1.8.9999999.9999999-dev',
       'aliases' => 
       array (
       ),
-      'reference' => '3ad4669f3b185902f1b4b078291eb877b3a56795',
+      'reference' => 'eb2266b140ae46cd50ef07b0aa25c0ccdf810230',
     ),
     'yiisoft/yii2-bootstrap' => 
     array (

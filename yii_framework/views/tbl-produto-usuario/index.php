@@ -19,13 +19,8 @@ $this->title = 'Cardápio';
         'dataProvider' => $dataProvider,
         'itemView' => '_item',
         'separator' => "<hr/>",
-        //'options' => ['class' => 'list-view well'],
+        //'options' => ['class' => 'list-view well', 'style' => 'background-color: #dddddd'],
         'itemOptions' => ['class' => 'well']
     ]); ?>
-
-
-<?= Html::button('Finalizar pedido', ['class' => 'btn btn-primary', 
-                                        'id'=>'btnAdicionarPedido', 
-                                        'style'=>'float: right;']) ?>
 
 </div>

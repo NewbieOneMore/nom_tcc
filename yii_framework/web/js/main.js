@@ -75,8 +75,11 @@ $(document).ready(function () {
 
     $('.increment-btn').click(function (e) {
         e.preventDefault();
+        /*var precoProduto = '<?php echo $precoProduto; ?>'
+        var precoTotal = '<?php echo $precoTotal; ?>' */
         var incre_value = $(this).parents('.quantity').find('.qty-input').val();
         var value = parseInt(incre_value, 10);
+        precoTotal += precoProduto * value;
         value = isNaN(value) ? 0 : value;
         if(value<10){
             value++;

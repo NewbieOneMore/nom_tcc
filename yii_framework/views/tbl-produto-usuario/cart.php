@@ -63,14 +63,15 @@ $total = \Yii::$app->cart->getCost();
             <?= Html::a('Remover', ['delete', 'idProduto' => $row->idProduto], ['class'=>'btn btn-danger', 'style'=>'margin-top: 15px;'])?>
         </div>
         <?php 
-            $precoTotal = $precoTotal + $row->precoProduto;
+            $precoProduto = $row->precoProduto;
+            $precoTotal = $precoTotal +$precoProduto;
         ?>
     </div>
     <?php } ?>
 
     <div class="row" style="margin-top: 30px;">
         <div class="col-md-4">
-            <h3><strong>Total: R$ <?= number_format($precoTotal, 2,",","."); ?></strong></h3> 
+            <h3 id = "total"><strong>Total: R$ <?= number_format($precoTotal, 2,",","."); ?></strong></h3> 
         </div>
     </div>
         

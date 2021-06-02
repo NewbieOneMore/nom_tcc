@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'eb2266b140ae46cd50ef07b0aa25c0ccdf810230',
+    'reference' => 'b5c7d798f8666f30a4ccfddf2025827dfe99df44',
     'name' => 'yiisoft/yii2-app-basic',
   ),
   'versions' => 
@@ -824,7 +824,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'eb2266b140ae46cd50ef07b0aa25c0ccdf810230',
+      'reference' => 'b5c7d798f8666f30a4ccfddf2025827dfe99df44',
     ),
     'yiisoft/yii2-bootstrap' => 
     array (

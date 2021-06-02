@@ -61,7 +61,7 @@ class TblUsuario extends \yii\db\ActiveRecord implements IdentityInterface
             if($this->isNewRecord) {
                 $this->authkeyUsuario = \Yii::$app->security->generateRandomString();
                 $this->accesstokenUsuario = \Yii::$app->security->generateRandomString();
-                $this->senhaUsuario = sha1($this->senhaUsuario);
+                $this->senhaUsuario = $this->senhaUsuario;
             }
             return true;
         }
@@ -97,6 +97,6 @@ class TblUsuario extends \yii\db\ActiveRecord implements IdentityInterface
     }
     public function validatePassword($senhaUsuario)
     {
-        return $this->senhaUsuario === sha1($senhaUsuario);
+        return $this->senhaUsuario === $senhaUsuario;
     }
 }

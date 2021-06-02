@@ -3,16 +3,19 @@
 namespace app\controllers;
 
 use Yii;
-use app\controllers\TblPedidoProduto;
+use app\controllers\TblPedidoProdutoController;
 use app\models\TblProdutoUsuario;
 use app\models\TblUsuario;
 use app\models\TblPedido;
+use app\models\TblPedidoProduto;
+use app\models\TblProduto;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yz\shoppingcart\ShoppingCart;
+use yii\db\BaseActiveRecord;
 
 
 /**
@@ -76,7 +79,7 @@ class TblProdutoUsuarioController extends Controller
             return $this->redirect(['view', 'id' => $model->idProduto]);
         }
 
-        return $this->render('create', [
+        return $this->render('tbl-produto-create', [
             'model' => $model,
         ]);
     }
@@ -131,27 +134,33 @@ class TblProdutoUsuarioController extends Controller
         throw new NotFoundHttpException();
     }
 
+        public function getNomeProduto($nomeProduto)
+    {
+        return $nomeProduto = TblProduto::find(['nomeProduto' => $nomeProduto])->one(); 
+    }
+    
+
     public function actionCheckout()
     {
         $cart = new ShoppingCart();
-
         $pedido = new TblPedido();
-
         $idUsuario = TblUsuario::find()->where(['idUsuario'=>Yii::$app->user->identity->id])->one();
-
-        $pedido->dataPedido = date('Y-m-d');
-        $model->idUsuario = $idUsuario->idUsuario;
-
-        $pedido->save();
-
-        foreach($cart->getPositions() as $data){
-            $pedidoproduto = new TblPedidoProduto();
-            $pedidoproduto->idPedido = $pedido->idPedido;
-            $pedidoproduto->idProduto = $data->id;
-            $pedidoproduto->save();
-        }
+            $pedido->idUsuario = $idUsuario;
+            $pedido->dataPedido = date('Y-m-d');
+            $pedido->precoPedido = 5;
+            $pedido->pagPedido = 0; 
+            $pedido->idPagamento = '3'; 
+            $pedido->save();
+                foreach($cart->getPositions() as $data){
+                    $pedidoproduto = new TblPedidoProduto();
+                    $pedidoproduto->idPedido = $pedido->idPedido;
+                    $pedidoproduto->idProduto = $data->id;
+                    $pedidoproduto->qtdProduto = \Yii::$app->cart->getCount();
+                    $pedidoproduto->save();
+                //$this->getNomeProduto($this->nomeProduto);
+                }
         $cart->removeAll();
-        return $this->render(['tbl-produto-usuario']);
+        return $this->actionIndex();
     }
 
 

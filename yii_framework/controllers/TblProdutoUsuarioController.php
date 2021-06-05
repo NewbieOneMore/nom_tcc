@@ -134,36 +134,48 @@ class TblProdutoUsuarioController extends Controller
         throw new NotFoundHttpException();
     }
 
-        public function getNomeProduto($nomeProduto)
+    public function getNomeProduto($nomeProduto)
     {
-        return $nomeProduto = TblProduto::find(['nomeProduto' => $nomeProduto])->one(); 
+        return $nomeProduto = TblProduto::find(['nomeProduto' => $nomeProduto])->one();
     }
-    
+
 
     public function actionCheckout()
     {
         $cart = new ShoppingCart();
         $pedido = new TblPedido();
-        $idUsuario = TblUsuario::find()->where(['idUsuario'=>Yii::$app->user->identity->id])->one();
-            $pedido->idUsuario = $idUsuario;
-            $pedido->dataPedido = date('Y-m-d');
-            $pedido->precoPedido = 5;
-            $pedido->pagPedido = 0; 
-            $pedido->idPagamento = '3'; 
-            $pedido->save();
-                foreach($cart->getPositions() as $data){
-                    $pedidoproduto = new TblPedidoProduto();
-                    $pedidoproduto->idPedido = $pedido->idPedido;
-                    $pedidoproduto->idProduto = $data->id;
-                    $pedidoproduto->qtdProduto = \Yii::$app->cart->getCount();
-                    $pedidoproduto->save();
-                //$this->getNomeProduto($this->nomeProduto);
-                }
+        $idUsuario = TblUsuario::find()->where(['idUsuario' => Yii::$app->user->identity->id])->one();
+        $pedido->idUsuario = $idUsuario;
+        $pedido->dataPedido = date('Y-m-d');
+        $pedido->precoPedido = 5;
+        $pedido->pagPedido = 0;
+        $pedido->idPagamento = '3';
+        $pedido->save();
+        foreach ($cart->getPositions() as $data) {
+            $pedidoproduto = new TblPedidoProduto();
+            $pedidoproduto->idPedido = $pedido->idPedido;
+            $pedidoproduto->idProduto = $data->id;
+            $pedidoproduto->qtdProduto = \Yii::$app->cart->getCount();
+            $pedidoproduto->save();
+            //$this->getNomeProduto($this->nomeProduto);
+        }
         $cart->removeAll();
         return $this->actionIndex();
     }
-
-
+    public function actionRemove($id)
+    {
+        $cart = new ShoppingCart();
+        $position = $cart->getPositionById($id);
+        $cart->removeById($position->getId());
+        $data = $cart->getPositions();
+        if (count($data) > 0) {
+            return $this->render('cart', [
+                'data' => $data,
+            ]);
+        } else {
+            return $this->actionIndex();
+        }
+    }
     /**
      * Finds the TblProdutoUsuario model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.

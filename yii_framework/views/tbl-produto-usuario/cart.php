@@ -39,12 +39,13 @@ $total = \Yii::$app->cart->getCost();
 
     <?php foreach($data as $row) {?>
 
-    <div class="row" style="margin-top: 30px;">
+    <div class="row produto" style="margin-top: 30px;">
         <div class="col-md-3">
             <h3><?= $row->nomeProduto ?></h3>
         </div>
         <div class="col-md-3">
-            <h3>R$<?= number_format($row->precoProduto, 2,",",".");?></h3>
+        <h3 class="preco">R$<?= number_format($row->precoProduto, 2,",",".");?></h3>
+        <input type="hidden" class="preco2" value="<?=$row->precoProduto;?>" />
         </div>
         <div class="col-md-3">
             <div class="input-group quantity" style="display: flex; margin-top: 15px;">
@@ -60,11 +61,11 @@ $total = \Yii::$app->cart->getCost();
             </div>
         </div>
         <div class="col-md-3">
-            <?= Html::a('Remover', ['delete', 'idProduto' => $row->idProduto], ['class'=>'btn btn-danger', 'style'=>'margin-top: 15px;'])?>
+            <?= Html::a('Remover', ['remove?id='.$row->getId()], ['class'=>'btn btn-danger', 'style'=>'margin-top: 15px;'])?>
         </div>
         <?php 
             $precoProduto = $row->precoProduto;
-            $precoTotal = $precoTotal +$precoProduto;
+            $precoTotal = $total + $precoTotal +$precoProduto;
         ?>
     </div>
     <?php } ?>

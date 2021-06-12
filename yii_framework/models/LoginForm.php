@@ -66,6 +66,10 @@ class LoginForm extends Model
         return false;
     }
 
+    public function checkAdm()
+    {
+        
+    }
     /**
      * Finds user by [[username]]
      *

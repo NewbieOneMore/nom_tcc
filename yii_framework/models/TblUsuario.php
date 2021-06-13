@@ -91,12 +91,19 @@ class TblUsuario extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return $this->authkeyUsuario === $authkeyUsuario;
     }
+
     public static function findByUsername($nomeUsuario)
     {
        return static::findOne(['nomeUsuario' => $nomeUsuario]);
     }
+
     public function validatePassword($senhaUsuario)
     {
         return $this->senhaUsuario === $senhaUsuario;
+    }
+
+    public function getAdmUsuario()
+    {
+        return $this->admUsuario;
     }
 }

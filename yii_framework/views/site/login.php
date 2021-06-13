@@ -4,6 +4,7 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model app\models\LoginForm */
 
+use app\models\TblUsuario;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
@@ -39,9 +40,8 @@ $this->title = 'Login';
         </div>
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
-            <?= Html::a('cadastrar-se', ['tbl-usurio/create'], ['class'=>'btn btn-primary'])?>
+            <?= Html::a('cadastrar-se', ['tbl-usuario-cliente/create'], ['class'=>'btn btn-primary'])?>
             </div>
         </div>
-
     <?php ActiveForm::end(); ?>
 </div>

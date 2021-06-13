@@ -40,7 +40,7 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
-        /* 'log' => [
+        'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
@@ -48,7 +48,7 @@ $config = [
                     'levels' => ['error', 'warning'],
                 ],
             ],
-        ], */
+        ],
         'db' => $db,
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -66,6 +66,20 @@ $config = [
         ]
        
         
+    ],
+    'as access' => [
+        'class' => \yii\filters\AccessControl::className(),
+        'rules' => [
+            [
+                'actions' => ['login', 'error'],
+                'allow' => true,
+            ],
+            [
+                //'actions' => ['logout', 'index'], // add all actions to take guest to login page
+                'allow' => true,
+                'roles' => ['@'],
+            ],
+        ],
     ],
     'params' => $params,
     'modules' => [

@@ -1,43 +1,43 @@
 //TblProduto
-$(function(){
+$(function () {
     //Pegar o click do botao "adicionar" 
-    $('#modalButton').click(function(){
+    $('#modalButton').click(function () {
         $('#modal').modal('show')
-        .find('#modalContent')
-        .load($(this).attr('value'));
+            .find('#modalContent')
+            .load($(this).attr('value'));
     });
 });
 
-$(function(){
+$(function () {
     //Pegar o click do botao "Adicionar categoria" 
-    $('#modalButtonCategoria').click(function(){
+    $('#modalButtonCategoria').click(function () {
         $('#modalCategoria').modal('show')
-        .find('#modalContentCategoria')
-        .load($(this).attr('value'));
+            .find('#modalContentCategoria')
+            .load($(this).attr('value'));
     });
 });
 
-$(function(){
+$(function () {
     //Pegar o click do botao "Excluir categoria" 
-    $('#modalButtonExcluirCategoria').click(function(){
+    $('#modalButtonExcluirCategoria').click(function () {
         $('#modalExcluirCategoria').modal('show')
-        .find('#modalContentExcluirCategoria')
-        .load($(this).attr('value'));
+            .find('#modalContentExcluirCategoria')
+            .load($(this).attr('value'));
     });
 });
 
-$(function(){
+$(function () {
     //Pegar o click do botao "Consultar pedido" 
-    $('#modalButtonPedidoProduto').click(function(){
+    $('#modalButtonPedidoProduto').click(function () {
         $('#modalPedidoProduto').modal('show')
-        .find('#modalContentPedidoProduto')
-        .load($(this).attr('value'));
+            .find('#modalContentPedidoProduto')
+            .load($(this).attr('value'));
     });
 });
 
-$(function(){
+$(function () {
     //Pegar o click do botao "Consultar pedido" 
-    $('#btnAdicionarCarrinho').click(function(){
+    $('#btnAdicionarCarrinho').click(function () {
         alert('teste');
     });
 });
@@ -49,10 +49,10 @@ $(document).ready(function () {//Esperar o documento HTML terminar de ser carreg
         postPedido();
         return false;
     });
-});var json;
+}); var json;
 
 function postPedido() {
-    let pedido = { 
+    let pedido = {
         'idUsuario': '3',
         'dataPedido': '2021-06-01',
         'precoPedido': 10,
@@ -62,8 +62,8 @@ function postPedido() {
 
     $.post(
         "/nom_tcc/yii_framework/web/api/pedido",
-        { "pedido": JSON.stringify(pedido)}, 
-        
+        { "pedido": JSON.stringify(pedido) },
+
         //Converter para texto o JSON dos dados e enviar como campo "dados"
         function (response) {
             exibirExemplo(response.status);//Exibir o membro "status" do JSON recebido pela API
@@ -78,9 +78,9 @@ $(document).ready(function () {
         /*var precoProduto = '<?php echo $precoProduto; ?>'
         var precoTotal = '<?php echo $precoTotal; ?>' */
         var incre_value = $(this).parents('.quantity').find('.qty-input').val();
-        var value = parseInt(incre_value, 10);     
+        var value = parseInt(incre_value, 10);
         value = isNaN(value) ? 0 : value;
-        if(value<10){
+        if (value < 10) {
             value++;
             $(this).parents('.quantity').find('.qty-input').val(value);
         }
@@ -92,10 +92,26 @@ $(document).ready(function () {
         var decre_value = $(this).parents('.quantity').find('.qty-input').val();
         var value = parseInt(decre_value, 10);
         value = isNaN(value) ? 0 : value;
-        if(value>1){
+        if (value > 1) {
             value--;
             $(this).parents('.quantity').find('.qty-input').val(value);
         }
     });
 
 });
+function getQuantity() 
+{
+    var stringValue = $('.quantity').find('.qty-input').val();
+    var numberValue = Number(stringValue);
+
+}
+var value = getQuantity();
+
+var iPrecoProduto = $('.produto').find('.preco2').val();
+var precoProduto = Number(iPrecoProduto);
+var iPrecoTotal = $('.total2').html();
+var precoTotal = Number(iPrecoTotal);
+
+var produtoMultiplicado = precoProduto * value;
+
+

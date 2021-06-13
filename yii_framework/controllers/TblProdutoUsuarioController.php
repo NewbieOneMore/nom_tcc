@@ -147,18 +147,17 @@ class TblProdutoUsuarioController extends Controller
         $idUsuario = TblUsuario::find()->where(['idUsuario' => Yii::$app->user->identity->id])->one();
         $pedido->idUsuario = $idUsuario;
         $pedido->dataPedido = date('Y-m-d');
-        $pedido->precoPedido = 5;
-        $pedido->pagPedido = 0;
-        $pedido->idPagamento = '3';
         $pedido->save();
+        /* $pedido->precoPedido = 5;
+        $pedido->pagPedido = 0;
+        $pedido->idPagamento = $this->idPagamento;
         foreach ($cart->getPositions() as $data) {
             $pedidoproduto = new TblPedidoProduto();
             $pedidoproduto->idPedido = $pedido->idPedido;
             $pedidoproduto->idProduto = $data->id;
             $pedidoproduto->qtdProduto = \Yii::$app->cart->getCount();
             $pedidoproduto->save();
-            //$this->getNomeProduto($this->nomeProduto);
-        }
+        } */
         $cart->removeAll();
         return $this->actionIndex();
     }

@@ -1,0 +1,98 @@
+2021-06-11 13:53:14 [::1][-][apa01faooa9jajkgapj34f61mn][error][Error] Error: Class "app\models\tblUsuario" not found in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\User.php:700
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Component.php(140): yii\web\User->getIsGuest()
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\di\Container.php(420): ReflectionClass->newInstanceArgs(Array)
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2-debug\src\Module.php(252): yii\BaseYii::createObject(Array)
+#10 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2-debug\src\Module.php(223): yii\debug\Module->initPanels()
+#11 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(158): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\di\Container.php(412): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\di\Container.php(171): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(427): yii\BaseYii::createObject(Array, Array)
+#18 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(321): yii\base\Module->getModule('debug')
+#19 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(70): yii\base\Application->bootstrap()
+#20 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(279): yii\web\Application->bootstrap()
+#21 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(212): yii\base\BaseObject->__construct(Array)
+#23 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2021-06-11 13:53:14 [::1][-][apa01faooa9jajkgapj34f61mn][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'apa01faooa9jajkgapj34f61mn'
+    '_identity' => 'bc859b7c2f8db9e1c3aad905a0dfabb75c487aa20c9a915942d866fc6318f507a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[6,\"-KLSLCCgKkXl1L8-ase4QoTLwpxlhHnG\",2592000]\";}'
+    '_csrf' => '94637887101b8d5e4cb18f20e353fec6ee7ae5ac14026238dcc68c4e08ca3341a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LBpdEdZPhS3SSkrzcd-baBkDNEughiRu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 6
+    '__authKey' => '-KLSLCCgKkXl1L8-ase4QoTLwpxlhHnG'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.41'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=apa01faooa9jajkgapj34f61mn; _identity=bc859b7c2f8db9e1c3aad905a0dfabb75c487aa20c9a915942d866fc6318f507a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B6%2C%22-KLSLCCgKkXl1L8-ase4QoTLwpxlhHnG%22%2C2592000%5D%22%3B%7D; _csrf=94637887101b8d5e4cb18f20e353fec6ee7ae5ac14026238dcc68c4e08ca3341a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LBpdEdZPhS3SSkrzcd-baBkDNEughiRu%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '60962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1623430394.7554
+    'REQUEST_TIME' => 1623430394
+]

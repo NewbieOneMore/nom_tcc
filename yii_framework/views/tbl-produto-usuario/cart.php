@@ -44,56 +44,62 @@ $total = \Yii::$app->cart->getCost();
                 <h3><?= $row->nomeProduto ?></h3>
             </div>
             <div class="col-md-3">
-                R$<h3 class="preco"><?= number_format($row->precoProduto, 2, ",", "."); ?></h3>
-                <input type="hidden" class="preco2" value="<?= $row->precoProduto; ?>" />
+                <h3 class="preco">R$ <?= number_format($row->precoProduto, 2, ",", "."); ?></h3>
+                <input type="hidden" class="ipreco" value="<?= $row->precoProduto; ?>" />
             </div>
             <div class="col-md-3">
-                <div class="input-group quantity" style="display: flex; margin-top: 15px;">
-                    <div class="input-group-prepend decrement-btn" style="cursor: pointer;">
+                <div class="input-group quantity" style="display: flex; margin-top: 15px;">                    
+                    
+                    <!-- <div class="input-group-prepend decrement-btn" style="cursor: pointer;">
                         <span class="btn btn-info"><strong>-</strong></span>
-                    </div>
-
-                    <input type="text" class="qty-input form-control" maxlength="2" value="1" style="text-align: center; width:30%;" onchange="sumTotal()">
-
-                    <div class="input-group-append increment-btn" style="cursor: pointer">
+                    </div> -->
+                        
+                        <input type="number" class="qty-input form-control" onchange='subTotal()' min="1" max="10" value="1" style="text-align: center; width:60%;">
+                    
+                    <!-- <div class="input-group-append increment-btn" style="cursor: pointer;">
                         <span class="btn btn-info"><strong>+</strong></span>
-                    </div>
+                    </div> -->
+                    
                 </div>
+                <input type="hidden" class="itotal"/>  
             </div>
             <div class="col-md-3">
                 <?= Html::a('Remover', ['remove?id=' . $row->getId()], ['class' => 'btn btn-danger', 'style' => 'margin-top: 15px;']) ?>
             </div>
-            <?php
-
-            /* $precoProduto = $row->precoProduto;
-            $precoTotal += $total + $precoProduto; */
-            ?>
         </div>
     <?php } ?>
 
     <div class="row" style="margin-top: 30px;">
         <div class="col-md-4">
-            Total: R$<h3 id="total"> <?= number_format($precoTotal, 2, ",", "."); ?></h3>
-            <input type="hidden" class="total2" value="<?= $total; ?>" />
-        </div>
+            <h3>Total: R$</h3>
+            <h2 id="gtotal"><?= number_format($precoTotal, 2, ",", "."); ?></h2>
+            <input type="hidden" id="gtotal"/>
+       </div>
     </div>
 
     <?= Html::a('Finalizar pedido', ['checkout'], ['class' => 'btn btn-success']) ?>
-
-    <script>
-        function sumTotal() 
-        {
-            var getQuantidade = document.getElementsByClassName('.qty-input');
-            var quantidade = Number(getQuantidade);
-            /* var getPreco = document.getElementsByClassName('.preco');
-            //var preco = Number(getPreco);
-            var getTotal = document.getElementById('#total');
-            //var total = Number(getTotal);
-
-
-            for (i = 0; i < preco.length; i++) {
-                total[i].innerText = (preco[i].value) * (quantidade[i].value);
-            } */
-        }
-    </script>
 </div>
+
+<script>
+
+    var gt=0;
+    var ipreco=document.getElementsByClassName('ipreco');
+    var iquantidade=document.getElementsByClassName('qty-input form-control');
+    var itotal=document.getElementsByClassName('itotal');
+    var gtotal=document.getElementById('gtotal');
+
+    function subTotal()
+    {
+        gt=0;
+        for(i=0; i<ipreco.length;i++)
+        {
+            itotal[i].value=(ipreco[i].value)*(iquantidade[i].value);
+
+            gt=gt+(ipreco[i].value)*(iquantidade[i].value);
+        }
+        gtotal.innerText=gt;
+    }
+
+    subTotal();
+
+</script>

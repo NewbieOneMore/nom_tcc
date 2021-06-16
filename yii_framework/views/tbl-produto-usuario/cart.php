@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-
+use yii\bootstrap\ActiveField;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\TblProdutoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -15,6 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 $itemsCount = \Yii::$app->cart->getCount();
 $total = \Yii::$app->cart->getCost();
 ?>
+<?= Html::a('Voltar', ['index'], ['class' => 'btn btn-primary']) ?>
 <div class="tbl-produto-usuario-index">
     <?php
     $precoTotal = 0;
@@ -54,7 +55,7 @@ $total = \Yii::$app->cart->getCost();
                         <span class="btn btn-info"><strong>-</strong></span>
                     </div> -->
                         
-                        <input type="number" class="qty-input form-control" onchange='subTotal()' min="1" max="10" value="1" style="text-align: center; width:60%;">
+                        <input type="number" class="qty-input form-control" onchange='subTotal()' min="1" max="<?= $row->estqProduto ?>" value="1" style="text-align: center; width:60%;">
                     
                     <!-- <div class="input-group-append increment-btn" style="cursor: pointer;">
                         <span class="btn btn-info"><strong>+</strong></span>
@@ -71,13 +72,21 @@ $total = \Yii::$app->cart->getCost();
 
     <div class="row" style="margin-top: 30px;">
         <div class="col-md-4">
-            <h3>Total: R$</h3>
+            <h3>Total:</h3>
             <h2 id="gtotal"><?= number_format($precoTotal, 2, ",", "."); ?></h2>
             <input type="hidden" id="gtotal"/>
        </div>
     </div>
 
     <?= Html::a('Finalizar pedido', ['checkout'], ['class' => 'btn btn-success']) ?>
+
+    <h3 style="float: right;">
+        <input type="radio" name="pagamento" value="1"/> À Vista
+        <input type="radio" name="pagamento" value="2"/> Crédito
+        <input type="radio" name="pagamento" value="3"/> Débito
+        <input type="radio" name="pagamento" value="4"/> Pix
+    </h3>
+
 </div>
 
 <script>
@@ -97,7 +106,7 @@ $total = \Yii::$app->cart->getCost();
 
             gt=gt+(ipreco[i].value)*(iquantidade[i].value);
         }
-        gtotal.innerText=gt;
+        gtotal.innerText=(gt).toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
     }
 
     subTotal();

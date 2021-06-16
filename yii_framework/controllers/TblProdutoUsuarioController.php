@@ -44,8 +44,10 @@ class TblProdutoUsuarioController extends Controller
      */
     public function actionIndex()
     {
+        $itemsCount = \Yii::$app->cart->getCount();
         $dataProvider = new ActiveDataProvider([
             'query' => TblProdutoUsuario::find(),
+            'pagination' => false,
         ]);
 
         return $this->render('index', [
@@ -118,7 +120,21 @@ class TblProdutoUsuarioController extends Controller
         return $this->redirect(['index']);
     }
 
-    //Carrinho
+    //CARRINHO
+    public function actionCart()
+    {
+        $cart = new ShoppingCart();
+        $dataProvider = new ActiveDataProvider([
+            'query' => TblProdutoUsuario::find(),
+        ]);
+        $data = $cart->getPositions();
+
+        return $this->render('cart', [
+            'dataProvider' => $dataProvider,
+            'data' => $data,
+        ]);
+    }
+
     public function actionAddToCart($idProduto)
     {
         $cart = new ShoppingCart();
@@ -145,22 +161,23 @@ class TblProdutoUsuarioController extends Controller
         $cart = new ShoppingCart();
         $pedido = new TblPedido();
         $idUsuario = TblUsuario::find()->where(['idUsuario' => Yii::$app->user->identity->id])->one();
-        $pedido->idUsuario = $idUsuario;
-        $pedido->dataPedido = date('Y-m-d');
-        $pedido->save();
-        /* $pedido->precoPedido = 5;
-        $pedido->pagPedido = 0;
-        $pedido->idPagamento = $this->idPagamento;
+            $pedido->idUsuario = $idUsuario;
+            $pedido->dataPedido = date('Y-m-d H:i:s');
+            $pedido->precoPedido = \Yii::$app->cart->getCost();
+            $pedido->pagPedido = 0;
+            $pedido->idPagamento = 1;
+            $pedido->save();
         foreach ($cart->getPositions() as $data) {
             $pedidoproduto = new TblPedidoProduto();
             $pedidoproduto->idPedido = $pedido->idPedido;
             $pedidoproduto->idProduto = $data->id;
             $pedidoproduto->qtdProduto = \Yii::$app->cart->getCount();
             $pedidoproduto->save();
-        } */
+        }
         $cart->removeAll();
         return $this->actionIndex();
     }
+
     public function actionRemove($id)
     {
         $cart = new ShoppingCart();

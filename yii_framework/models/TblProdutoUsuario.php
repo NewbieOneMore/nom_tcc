@@ -85,4 +85,14 @@ class TblProdutoUsuario extends \yii\db\ActiveRecord implements CartPositionInte
     {
         return $this->hasMany(TblProduto::classname(), ['idCategoria' => 'idCategoria']);
     }
+
+    /**
+     * Gets query for [[IdPagamento0]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPagamento()
+    {
+        return $this->hasOne(Tblpagamento::className(), ['idPagamento' => 'idPagamento']);
+    }
 }

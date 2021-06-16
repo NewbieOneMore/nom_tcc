@@ -10,10 +10,16 @@ use yii\helpers\Url;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Cardápio';
+$itemsCount = \Yii::$app->cart->getCount();
 ?>
-<div class="tbl-produto-usuario-index">
+<div class="tbl-produto-usuario-index"> 
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode($this->title) ?></h1> 
+
+    <p><a class="btn btn-success" 
+          href="cart"
+          style="float: right; margin-top: -40px;">(<?= $itemsCount ?>) Meu Carrinho</a>
+    </p>
 
     <?= ListView::widget([
         'dataProvider' => $dataProvider,

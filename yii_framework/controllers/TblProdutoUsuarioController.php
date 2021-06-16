@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use app\controllers\TblPedidoProdutoController;
+use app\models\TblPagamento;
 use app\models\TblProdutoUsuario;
 use app\models\TblUsuario;
 use app\models\TblPedido;
@@ -44,10 +45,8 @@ class TblProdutoUsuarioController extends Controller
      */
     public function actionIndex()
     {
-        $itemsCount = \Yii::$app->cart->getCount();
         $dataProvider = new ActiveDataProvider([
             'query' => TblProdutoUsuario::find(),
-            'pagination' => false,
         ]);
 
         return $this->render('index', [
@@ -120,7 +119,7 @@ class TblProdutoUsuarioController extends Controller
         return $this->redirect(['index']);
     }
 
-    //CARRINHO
+    //Carrinho
     public function actionCart()
     {
         $cart = new ShoppingCart();
@@ -134,7 +133,6 @@ class TblProdutoUsuarioController extends Controller
             'data' => $data,
         ]);
     }
-
     public function actionAddToCart($idProduto)
     {
         $cart = new ShoppingCart();
@@ -149,35 +147,42 @@ class TblProdutoUsuarioController extends Controller
         }
         throw new NotFoundHttpException();
     }
+    
+    public static function getCount()
+    {
+        $count = 0;
+        $cart = new ShoppingCart();
+        $data = $cart->getPositions();
+        $count = count($data);
+        return $count;
+    }
 
     public function getNomeProduto($nomeProduto)
     {
         return $nomeProduto = TblProduto::find(['nomeProduto' => $nomeProduto])->one();
     }
 
-
     public function actionCheckout()
     {
         $cart = new ShoppingCart();
         $pedido = new TblPedido();
-        $idUsuario = TblUsuario::find()->where(['idUsuario' => Yii::$app->user->identity->id])->one();
-            $pedido->idUsuario = $idUsuario;
-            $pedido->dataPedido = date('Y-m-d H:i:s');
-            $pedido->precoPedido = \Yii::$app->cart->getCost();
-            $pedido->pagPedido = 0;
-            $pedido->idPagamento = 1;
-            $pedido->save();
+        $idUsuario = Yii::$app->user->identity->id;
+        $pedido->idUsuario = $idUsuario;
+        $pedido->dataPedido = date('Y-m-d H:i:s');
+        $pedido->precoPedido = Yii::$app->cart->getCost();
+        $pedido->idPagamento = 4;
+        $pedido->pagPedido = 0;
+        $pedido->save();
         foreach ($cart->getPositions() as $data) {
             $pedidoproduto = new TblPedidoProduto();
             $pedidoproduto->idPedido = $pedido->idPedido;
             $pedidoproduto->idProduto = $data->id;
-            $pedidoproduto->qtdProduto = \Yii::$app->cart->getCount();
+            //$pedidoproduto->qtdProduto = 
             $pedidoproduto->save();
         }
         $cart->removeAll();
         return $this->actionIndex();
     }
-
     public function actionRemove($id)
     {
         $cart = new ShoppingCart();

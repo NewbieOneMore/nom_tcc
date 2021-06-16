@@ -5,6 +5,7 @@ namespace app\models;
 use Yii;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
+use yii\db\QueryBuilder;
 
 /**
  * This is the model class for table "tblUsuario".
@@ -97,6 +98,12 @@ class TblUsuario extends \yii\db\ActiveRecord implements IdentityInterface
        return static::findOne(['nomeUsuario' => $nomeUsuario]);
     }
 
+    public function RandomPassword()
+    {
+        $randomPassword = (new \Yii\db\Query())->select("senha_aleatoria");
+        return $this->senhaUsuario = $randomPassword;
+    }
+    
     public function validatePassword($senhaUsuario)
     {
         return $this->senhaUsuario === $senhaUsuario;

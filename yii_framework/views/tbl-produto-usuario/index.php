@@ -4,13 +4,12 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\ListView;
 use yii\helpers\Url;
-
+use app\controllers\TblProdutoUsuarioController;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Cardápio';
-$itemsCount = \Yii::$app->cart->getCount();
 ?>
 <div class="tbl-produto-usuario-index"> 
 
@@ -18,7 +17,7 @@ $itemsCount = \Yii::$app->cart->getCount();
 
     <p><a class="btn btn-success" 
           href="cart"
-          style="float: right; margin-top: -40px;">(<?= $itemsCount ?>) Meu Carrinho</a>
+          style="float: right; margin-top: -40px;">(<?= TblProdutoUsuarioController::getCount();?>) Meu Carrinho</a>
     </p>
 
     <?= ListView::widget([

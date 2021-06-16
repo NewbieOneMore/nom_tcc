@@ -95,4 +95,14 @@ class TblProdutoUsuario extends \yii\db\ActiveRecord implements CartPositionInte
     {
         return $this->hasOne(Tblpagamento::className(), ['idPagamento' => 'idPagamento']);
     }
+    public function beforeSave($insert)
+    {
+        $this->setIsNewRecord(true);
+        $pedido = new TblPedido();
+        $idUsuario = TblUsuario::find()->where(['idUsuario' => Yii::$app->user->identity->id])->one();
+        $pedido->idUsuario = $idUsuario;
+        $pedido->dataPedido = date('Y-m-d');
+        #return $this->actionCheckout();
+        return true;
+    }
 }

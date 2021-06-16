@@ -12,7 +12,6 @@ $this->title = 'Carrinho';
 $this->params['breadcrumbs'][] = ['label' => 'Cardápio', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
-$itemsCount = \Yii::$app->cart->getCount();
 $total = \Yii::$app->cart->getCost();
 ?>
 <?= Html::a('Voltar', ['index'], ['class' => 'btn btn-primary']) ?>
@@ -81,15 +80,29 @@ $total = \Yii::$app->cart->getCost();
     <?= Html::a('Finalizar pedido', ['checkout'], ['class' => 'btn btn-success']) ?>
 
     <h3 style="float: right;">
-        <input type="radio" name="pagamento" value="1"/> À Vista
-        <input type="radio" name="pagamento" value="2"/> Crédito
-        <input type="radio" name="pagamento" value="3"/> Débito
-        <input type="radio" name="pagamento" value="4"/> Pix
+        <input class = "pagamento"  type="radio" name="pagamento" value="1"/> À Vista
+        <input class = "pagamento"  type="radio" name="pagamento" value="2"/> Crédito
+        <input class = "pagamento"  type="radio" name="pagamento" value="3"/> Débito
+        <input class = "pagamento"  type="radio" name="pagamento" value="4" checked = "true"/> Pix
     </h3>
 
+<input type="hidden" id="inputPagamento" value="">
+<input type="hidden" id="inputTotal" value="">
 </div>
-
+     
 <script>
+    var pagamento = document.getElementsByClassName('pagamento');
+    function getPagamentoValue()
+    {
+        for(i=0;i<pagamento.length;i++) {
+            if(pagamento[i].checked) {
+                var pagamentoValue = Number(pagamento[i].value);
+                document.getElementById('inputPagamento').value = Number(pagamentoValue);
+                alert(pagamentoValue);
+            }
+        }
+    }
+
 
     var gt=0;
     var ipreco=document.getElementsByClassName('ipreco');
@@ -107,8 +120,11 @@ $total = \Yii::$app->cart->getCost();
             gt=gt+(ipreco[i].value)*(iquantidade[i].value);
         }
         gtotal.innerText=(gt).toLocaleString("pt-BR", {style: "currency", currency: "BRL"});
+        document.getElementById('inputTotal').value = gtotal;
+
     }
 
     subTotal();
 
 </script>
+    

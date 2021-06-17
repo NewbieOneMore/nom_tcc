@@ -177,7 +177,8 @@ class TblProdutoUsuarioController extends Controller
             $pedidoproduto = new TblPedidoProduto();
             $pedidoproduto->idPedido = $pedido->idPedido;
             $pedidoproduto->idProduto = $data->id;
-            //$pedidoproduto->qtdProduto = 
+            $pedidoproduto->qtdProduto = 1;
+            $pedidoproduto->valorProduto = 0;
             $pedidoproduto->save();
         }
         $cart->removeAll();

@@ -47,10 +47,10 @@ class tblUsuarioCliente extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idUsuario' => 'Id Usuario',
-            'nomeUsuario' => 'Nome Usuario',
-            'emailUsuario' => 'Email Usuario',
-            'senhaUsuario' => 'Senha Usuario',
+            'idUsuario' => 'ID',
+            'nomeUsuario' => 'Nome',
+            'emailUsuario' => 'Email',
+            'senhaUsuario' => 'Senha',
             'authkeyUsuario' => 'Authkey Usuario',
             'accesstokenUsuario' => 'Accesstoken Usuario',
             'admUsuario' => 'Adm Usuario',

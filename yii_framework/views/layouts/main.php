@@ -28,6 +28,7 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?php
+    //if(AppAsset::register($this) == Tbl)
     NavBar::begin([
         'brandLabel' => "Cantina do Henrique",
         'brandUrl' => Yii::$app->homeUrl,
@@ -44,7 +45,6 @@ AppAsset::register($this);
             //['label' => 'Categoria', 'url' => ['/tbl-categoria']],
             //['label' => 'Pagamento', 'url' => ['/tbl-pagamento']],
             ['label' => 'Usuários', 'url' => ['/tbl-usuario']],
-            //['label' => 'Histórico', 'url' => ['/tbl-historico-estoque']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (

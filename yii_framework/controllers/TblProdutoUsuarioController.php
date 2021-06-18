@@ -10,6 +10,7 @@ use app\models\TblUsuario;
 use app\models\TblPedido;
 use app\models\TblPedidoProduto;
 use app\models\TblProduto;
+use app\widgets\Alert;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -147,7 +148,7 @@ class TblProdutoUsuarioController extends Controller
         }
         throw new NotFoundHttpException();
     }
-    
+
     public static function getCount()
     {
         $count = 0;
@@ -165,23 +166,37 @@ class TblProdutoUsuarioController extends Controller
     public function actionCheckout()
     {
         $cart = new ShoppingCart();
-        $pedido = new TblPedido();
-        $idUsuario = Yii::$app->user->identity->id;
-        $pedido->idUsuario = $idUsuario;
-        $pedido->dataPedido = date('Y-m-d H:i:s');
-        $pedido->precoPedido = Yii::$app->cart->getCost();
-        $pedido->idPagamento = 4;
-        $pedido->pagPedido = 0;
-        $pedido->save();
-        foreach ($cart->getPositions() as $data) {
-            $pedidoproduto = new TblPedidoProduto();
-            $pedidoproduto->idPedido = $pedido->idPedido;
-            $pedidoproduto->idProduto = $data->id;
-            $pedidoproduto->qtdProduto = 1;
-            $pedidoproduto->valorProduto = 0;
-            $pedidoproduto->save();
+        $data = $cart->getPositions();
+        if (count($data) > 0) {
+            $idpagamento = (int)$_GET['idPagamento'];
+            $precoPedido = (float)$_GET['precoPedido'];
+            $qtdProduto = (int)$_GET['quantidade'];
+            $pedido = new TblPedido();
+            $idUsuario = Yii::$app->user->identity->id;
+            $pedido->idUsuario = $idUsuario;
+            $pedido->dataPedido = date('Y-m-d H:i:s');
+            $pedido->precoPedido = $precoPedido;
+            var_dump($qtdProduto);
+            die();
+            $pedido->idPagamento = $idpagamento;
+            $pedido->pagPedido = 0;
+            $pedido->save();
+            foreach ($cart->getPositions() as $data) {
+                //$estoque = new TblProduto();
+                $pedidoproduto = new TblPedidoProduto();
+                $pedidoproduto->idPedido = $pedido->idPedido;
+                $pedidoproduto->idProduto = $data->id;
+                $pedidoproduto->qtdProduto = 1;
+                // $estoque->idProduto = $data->id;
+                //$estoque->estqProduto -= $qtdProduto;            
+                $pedidoproduto->valorProduto = 0;
+                $pedidoproduto->save();
+                // $estoque->save();
+            }
+            $cart->removeAll();
+            return $this->actionIndex();
         }
-        $cart->removeAll();
+        echo '<script>alert("O carrinho está vazio")</script>';
         return $this->actionIndex();
     }
     public function actionRemove($id)

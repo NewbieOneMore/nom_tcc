@@ -19,6 +19,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'oaAgTrzO1ZVY4OpmoGEt45et7m_41y5B',
+            'enableCsrfValidation' => false,
         ],
         'formatter' => [
             'dateFormat' => 'dd/MM/YYYY'

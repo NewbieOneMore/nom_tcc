@@ -37,7 +37,7 @@ $total = \Yii::$app->cart->getCost();
         </div>
     </div>
 
-    <form action="checkout" method="get">
+    <form action="checkout" method="post">
         <?php foreach ($data as $row) { ?>
 
             <div class="row produto" style="margin-top: 30px;">
@@ -55,7 +55,8 @@ $total = \Yii::$app->cart->getCost();
                         <!-- <div class="input-group-prepend decrement-btn" style="cursor: pointer;">
                         <span class="btn btn-info"><strong>-</strong></span>
                     </div> -->
-                        <input type="number" name="quantidade" id="inputQuantidade" class="qty-input form-control" onchange='subTotal()' min="1" max="<?= $row->estqProduto ?>" value="1" style="text-align: center; width:60%;">
+                        <input type="hidden" name="idProduto[]" id="inputQuantidade" class="qty-input form-control" value="<?= $row->idProduto?>">
+                        <input type="number" name="quantidade[]" id="inputQuantidade" class="qty-input form-control" onchange='subTotal()' min="1" max="<?= $row->estqProduto ?>" value="1" style="text-align: center; width:60%;">
                         <input type="hidden" name="idPagamento" id="inputPagamento" onload="getPagamentoValue()" value="">
                         <input type="hidden" name="precoPedido" id="inputTotal" onload="subTotal()" value="">
                         <!-- <div class="input-group-append increment-btn" style="cursor: pointer;">
@@ -78,15 +79,14 @@ $total = \Yii::$app->cart->getCost();
                 <input type="hidden" id="gtotal" />
             </div>
         </div>
-        
+
         <input type="submit" class="btn btn-success" onclick="getPagamentoValue()" value="Finalizar Pedido">
-        <?= Html::submitButton('Finalizar pedido', ['checkout'], ['class' => 'btn btn-success']) ?>
 
         <h3 style="float: right;">
-            <input class="pagamento" type="radio" name="pagamento" value="1" /> À Vista
+            <input class="pagamento" type="radio" name="pagamento" value="1" checked="true"/> À Vista
             <input class="pagamento" type="radio" name="pagamento" value="2" /> Crédito
             <input class="pagamento" type="radio" name="pagamento" value="3" /> Débito
-            <input class="pagamento" type="radio" name="pagamento" value="4" checked="true" /> Pix
+            <input class="pagamento" type="radio" name="pagamento" value="4" /> Pix
         </h3>
 
         <input type="hidden" id="inputPagamento" value="">

@@ -1894,3 +1894,1848 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1623969049.7755
     'REQUEST_TIME' => 1623969049
 ]
+2021-06-18 07:51:40 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:51:40 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'BfcFxqpLX6fmhvhmtI0mej59fNMQMSYTi4F9HG_QV8tSxTyt_R0oxanjkwTa6WA9dhARsEdkf3zquUhaKeluhQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '50891'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013500.2587
+    'REQUEST_TIME' => 1624013500
+]
+2021-06-18 07:51:45 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:51:45 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'BfcFxqpLX6fmhvhmtI0mej59fNMQMSYTi4F9HG_QV8tSxTyt_R0oxanjkwTa6WA9dhARsEdkf3zquUhaKeluhQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '50891'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013505.5509
+    'REQUEST_TIME' => 1624013505
+]
+2021-06-18 07:51:51 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:51:51 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'BfcFxqpLX6fmhvhmtI0mej59fNMQMSYTi4F9HG_QV8tSxTyt_R0oxanjkwTa6WA9dhARsEdkf3zquUhaKeluhQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '52674'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013511.5108
+    'REQUEST_TIME' => 1624013511
+]
+2021-06-18 07:53:54 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:53:54 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'BfcFxqpLX6fmhvhmtI0mej59fNMQMSYTi4F9HG_QV8tSxTyt_R0oxanjkwTa6WA9dhARsEdkf3zquUhaKeluhQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?TblPedidoSearch%5BidPedido%5D=&TblPedidoSearch%5BidUsuario%5D=&TblPedidoSearch%5BdataPedido%5D=&TblPedidoSearch%5BprecoPedido%5D=&TblPedidoSearch%5BpagPedido%5D=0&TblPedidoSearch%5BidPagamento%5D=3&page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '57626'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013634.4026
+    'REQUEST_TIME' => 1624013634
+]
+2021-06-18 07:54:08 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:54:08 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'BfcFxqpLX6fmhvhmtI0mej59fNMQMSYTi4F9HG_QV8tSxTyt_R0oxanjkwTa6WA9dhARsEdkf3zquUhaKeluhQ=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?TblPedidoSearch%5BidPedido%5D=&TblPedidoSearch%5BidUsuario%5D=&TblPedidoSearch%5BdataPedido%5D=&TblPedidoSearch%5BprecoPedido%5D=&TblPedidoSearch%5BpagPedido%5D=0&TblPedidoSearch%5BidPagamento%5D=&page=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '61010'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013648.6887
+    'REQUEST_TIME' => 1624013648
+]
+2021-06-18 07:54:57 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:54:57 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'bkZullJzwPbC_FLZz_f4PAlp-jBedk0JLhSq9HiJV6g5dFf9BSW3lI2ZObuhk757QQSXUwkjFGZPLJ-yPrBu5g=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?TblPedidoSearch%5BidPedido%5D=&TblPedidoSearch%5BidUsuario%5D=&TblPedidoSearch%5BdataPedido%5D=&TblPedidoSearch%5BprecoPedido%5D=&TblPedidoSearch%5BpagPedido%5D=0&TblPedidoSearch%5BidPagamento%5D=&page=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '55278'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013697.6441
+    'REQUEST_TIME' => 1624013697
+]
+2021-06-18 07:56:07 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 07:56:07 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'IpTb4d7W6wvTX7P4R-FtgAWLaXBZDvxsUMaMW2h4ghl1puKKiYCcaZw62JophSvHTeYEEw5bpQMx_rkdLkG7Vw=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '62195'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624013767.2481
+    'REQUEST_TIME' => 1624013767
+]
+2021-06-18 12:10:57 [::1][3][ifch9oa0mub353d53ouog1e01e][error][Error] Error: Call to a member function getId() on int in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\omnilight\yii2-shopping-cart\ShoppingCart.php:97
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(188): yz\shoppingcart\ShoppingCart->put(1, 1)
+#1 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-06-18 12:10:57 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = [
+    'quantidade' => '1'
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/cart'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '57695'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'REDIRECT_QUERY_STRING' => 'quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout?quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624029057.181
+    'REQUEST_TIME' => 1624029057
+]
+2021-06-18 12:14:22 [::1][3][ifch9oa0mub353d53ouog1e01e][error][Error] Error: Call to a member function getId() on int in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\omnilight\yii2-shopping-cart\ShoppingCart.php:97
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(188): yz\shoppingcart\ShoppingCart->put(1, 1)
+#1 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-06-18 12:14:22 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = [
+    'quantidade' => '1'
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/cart'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '58450'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'REDIRECT_QUERY_STRING' => 'quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout?quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624029262.1978
+    'REQUEST_TIME' => 1624029262
+]
+2021-06-18 12:19:41 [::1][3][ifch9oa0mub353d53ouog1e01e][error][Error] Error: Call to a member function getId() on int in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\omnilight\yii2-shopping-cart\ShoppingCart.php:97
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(188): yz\shoppingcart\ShoppingCart->put(1, 1)
+#1 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-06-18 12:19:40 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = [
+    'quantidade' => '1'
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/cart'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '53456'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'REDIRECT_QUERY_STRING' => 'quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout?quantidade=1&idPagamento=4&precoPedido=7.5&quantidade=1&idPagamento=&precoPedido=&pagamento=4'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624029580.8777
+    'REQUEST_TIME' => 1624029580
+]
+2021-06-18 20:13:26 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: tbl-pedido/tbl-pedido-produto in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('tbl-pedido-prod...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-pedido/tbl-...', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 20:13:26 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'r3myGbGg5-EUse4ATGSk33gzJp0TBH86U2V8DYbbaYH4S4ty5vaQg1vUhWIiAOKYMF5L_kRRJlUyXUlLwOJQzw=='
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-pedido/index?page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '50558'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-pedido/tbl-pedido-produto'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624058006.4495
+    'REQUEST_TIME' => 1624058006
+]
+2021-06-18 20:39:19 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Não foi possível verificar a sua submissão de dados. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Controller.php:218
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2021-06-18 20:39:18 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = [
+    'idProduto' => [
+        0 => '1'
+        1 => '2'
+    ]
+    'quantidade' => [
+        0 => '3'
+        1 => '2'
+    ]
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '1'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '142'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/add-to-cart?idProduto=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '57887'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624059558.812
+    'REQUEST_TIME' => 1624059558
+]
+2021-06-18 20:55:12 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key 2 in C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php:188
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(188): yii\base\ErrorHandler->handleError(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 188)
+#1 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-06-18 20:55:12 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = [
+    'idProduto' => [
+        0 => '2'
+        1 => '1'
+    ]
+    'quantidade' => [
+        0 => '4'
+        1 => '2'
+    ]
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '1'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '140'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ORIGIN' => 'null'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '52720'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624060512.4141
+    'REQUEST_TIME' => 1624060512
+]
+2021-06-18 20:55:47 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key 2 in C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php:188
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(188): yii\base\ErrorHandler->handleError(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 188)
+#1 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-06-18 20:55:47 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = [
+    'quantidade' => [
+        0 => '2'
+        1 => '3'
+    ]
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '1'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '106'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/add-to-cart?idProduto=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '54185'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624060547.11
+    'REQUEST_TIME' => 1624060547
+]
+2021-06-18 21:01:40 [::1][3][ifch9oa0mub353d53ouog1e01e][error][Error] Error: Call to a member function getId() on int in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\omnilight\yii2-shopping-cart\ShoppingCart.php:97
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(190): yz\shoppingcart\ShoppingCart->put(2, '4')
+#1 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-06-18 21:01:40 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = [
+    'idProduto' => [
+        0 => '2'
+        1 => '1'
+    ]
+    'quantidade' => [
+        0 => '4'
+        1 => '2'
+    ]
+    'idPagamento' => ''
+    'precoPedido' => ''
+    'pagamento' => '1'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:2:{i:2;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:2;s:11:\"nomeProduto\";s:9:\"Coca-Cola\";s:12:\"precoProduto\";d:4;s:10:\"valProduto\";s:10:\"2022-05-31\";s:11:\"estqProduto\";i:60;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";i:1;}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '140'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/cart'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '64215'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624060899.9703
+    'REQUEST_TIME' => 1624060899
+]
+2021-06-18 21:07:29 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'valorProduto' cannot be null in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('tblpedidoprodut...', Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(false, NULL)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(195): yii\db\BaseActiveRecord->save(false)
+#7 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#8 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#11 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#12 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'valorProduto' cannot be null
+The SQL being executed was: INSERT INTO `tblpedidoproduto` (`idPedido`, `idProduto`, `qtdProduto`, `valorProduto`) VALUES (25, 1, 4, NULL) in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('tblpedidoprodut...', Array)
+#4 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(false, NULL)
+#6 C:\xampp\htdocs\nom_tcc\yii_framework\controllers\TblProdutoUsuarioController.php(195): yii\db\BaseActiveRecord->save(false)
+#7 [internal function]: app\controllers\TblProdutoUsuarioController->actionCheckout()
+#8 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('checkout', Array)
+#11 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tbl-produto-usu...', Array)
+#12 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'valorProduto' cannot be null
+)
+
+2021-06-18 21:07:29 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = [
+    'idProduto' => [
+        0 => '1'
+    ]
+    'quantidade' => [
+        0 => '4'
+    ]
+    'idPagamento' => '1'
+    'precoPedido' => '3.5'
+    'pagamento' => '1'
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:1:{i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";s:1:\"4\";}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '78'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario/add-to-cart?idProduto=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '56262'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tbl-produto-usuario/checkout'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624061249.2541
+    'REQUEST_TIME' => 1624061249
+]
+2021-06-18 21:37:52 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "cart". in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('cart', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 21:37:52 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:1:{i:1;O:28:\"app\\models\\TblProdutoUsuario\":11:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:13;s:11:\"idCategoria\";i:1;}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";a:6:{s:9:\"idProduto\";i:1;s:11:\"nomeProduto\";s:11:\"Chá Gelado\";s:12:\"precoProduto\";d:3.5;s:10:\"valProduto\";s:10:\"2021-12-29\";s:11:\"estqProduto\";i:15;s:11:\"idCategoria\";i:1;}s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:47:\"\0yii\\db\\BaseActiveRecord\0_relationsDependencies\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:35:\"\0yii\\base\\Component\0_eventWildcards\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:12:\"\0*\0_quantity\";s:1:\"1\";}}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/tbl-produto-usuario'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '59393'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/cart'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/cart'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624063072.3247
+    'REQUEST_TIME' => 1624063072
+]
+2021-06-18 21:52:16 [::1][3][ifch9oa0mub353d53ouog1e01e][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site-cliente". in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site-cliente', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 21:52:16 [::1][3][ifch9oa0mub353d53ouog1e01e][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ifch9oa0mub353d53ouog1e01e'
+    '_identity' => 'bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/'
+    '__id' => 3
+    '__authKey' => ''
+    'yz\\shoppingcart\\ShoppingCart' => 'a:0:{}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=ifch9oa0mub353d53ouog1e01e; _identity=bf522090ee4378dfa2cc035ff002d350eee2492e8c68dbf23ac4278cedf517bba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; _csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '58653'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/site-cliente'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/site-cliente'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624063936.2425
+    'REQUEST_TIME' => 1624063936
+]
+2021-06-18 22:02:05 [::1][-][8m36rqa12ncke82om19dacao76][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "tblUsuarioCliente/create". in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('tblUsuarioClien...', Array)
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Página não encontrada. in C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\nom_tcc\yii_framework\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\nom_tcc\yii_framework\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-06-18 22:02:05 [::1][-][8m36rqa12ncke82om19dacao76][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W29kWVwbOekbndFGHmmcWUYoa85FF99N\";}'
+    'PHPSESSID' => '8m36rqa12ncke82om19dacao76'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/nom_tcc/yii_framework/web/tbl-usuario-cliente/create'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not;A Brand\";v=\"99\", \"Microsoft Edge\";v=\"91\", \"Chromium\";v=\"91\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 Edg/91.0.864.48'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/nom_tcc/yii_framework/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'
+    'HTTP_COOKIE' => '_csrf=b00f18b75eb106347f20ff037c99cc1a06faded4a16990e6431d59d8bd04791ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W29kWVwbOekbndFGHmmcWUYoa85FF99N%22%3B%7D; PHPSESSID=8m36rqa12ncke82om19dacao76'
+    'PATH' => 'C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\Azure Data Studio\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.4.9;C:\\ProgramData\\ComposerSetup\\bin;C:\\ProgramData\\UNIVALI\\Portugol Studio;C:\\Users\\Porci\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Porci\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\Azure Data Studio\\bin;C:\\Users\\Porci\\.dotnet\\tools;C:\\Users\\Porci\\AppData\\Roaming\\npm;C:\\Users\\Porci\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Porci\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.2'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/nom_tcc/yii_framework/web/index.php'
+    'REMOTE_PORT' => '59400'
+    'REDIRECT_URL' => '/nom_tcc/yii_framework/web/tblUsuarioCliente/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/nom_tcc/yii_framework/web/tblUsuarioCliente/create'
+    'SCRIPT_NAME' => '/nom_tcc/yii_framework/web/index.php'
+    'PHP_SELF' => '/nom_tcc/yii_framework/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1624064525.2882
+    'REQUEST_TIME' => 1624064525
+]

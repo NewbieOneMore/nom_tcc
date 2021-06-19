@@ -168,30 +168,29 @@ class TblProdutoUsuarioController extends Controller
         $cart = new ShoppingCart();
         $data = $cart->getPositions();
         if (count($data) > 0) {
-            $idpagamento = (int)$_GET['idPagamento'];
-            $precoPedido = (float)$_GET['precoPedido'];
-            $qtdProduto = (int)$_GET['quantidade'];
+            $idpagamento = (int)$_POST['idPagamento'];
+            $precoPedido = (float)$_POST['precoPedido'];
+            $quantidade = $_POST['quantidade'];
+            $idProduto = $_POST['idProduto'];
             $pedido = new TblPedido();
             $idUsuario = Yii::$app->user->identity->id;
             $pedido->idUsuario = $idUsuario;
             $pedido->dataPedido = date('Y-m-d H:i:s');
             $pedido->precoPedido = $precoPedido;
-            var_dump($qtdProduto);
-            die();
             $pedido->idPagamento = $idpagamento;
             $pedido->pagPedido = 0;
             $pedido->save();
-            foreach ($cart->getPositions() as $data) {
-                //$estoque = new TblProduto();
+            foreach ($cart->getPositions() as $i => $data) {
+                $i = array_search($i, $idProduto);
                 $pedidoproduto = new TblPedidoProduto();
                 $pedidoproduto->idPedido = $pedido->idPedido;
-                $pedidoproduto->idProduto = $data->id;
-                $pedidoproduto->qtdProduto = 1;
-                // $estoque->idProduto = $data->id;
-                //$estoque->estqProduto -= $qtdProduto;            
-                $pedidoproduto->valorProduto = 0;
-                $pedidoproduto->save();
-                // $estoque->save();
+                $pedidoproduto->idProduto = $data->idProduto = $data->id;
+                $data->estqProduto -= $quantidade[$i];            
+                $cart->put($data, $quantidade[$i]);
+                $pedidoproduto->qtdProduto = $quantidade[$i];
+                $pedidoproduto->valorProduto = $data->precoProduto;
+                $pedidoproduto->save(false);
+                $data->save(false);
             }
             $cart->removeAll();
             return $this->actionIndex();

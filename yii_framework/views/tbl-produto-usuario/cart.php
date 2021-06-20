@@ -9,10 +9,6 @@ use yii\bootstrap\ActiveField;
 
 
 $this->title = 'Carrinho';
-$this->params['breadcrumbs'][] = ['label' => 'Cardápio', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
-
-$total = \Yii::$app->cart->getCost();
 ?>
 <?= Html::a('Voltar', ['index'], ['class' => 'btn btn-primary']) ?>
 <div class="tbl-produto-usuario-index">
@@ -55,7 +51,7 @@ $total = \Yii::$app->cart->getCost();
                         <!-- <div class="input-group-prepend decrement-btn" style="cursor: pointer;">
                         <span class="btn btn-info"><strong>-</strong></span>
                     </div> -->
-                        <input type="hidden" name="idProduto[]" id="inputQuantidade" class="qty-input form-control" value="<?= $row->idProduto?>">
+                        <input type="hidden" name="idProduto[]" id="inputQuantidade" class="idProduto" value="<?= $row->idProduto?>">
                         <input type="number" name="quantidade[]" id="inputQuantidade" class="qty-input form-control" onchange='subTotal()' min="1" max="<?= $row->estqProduto ?>" value="1" style="text-align: center; width:60%;">
                         <input type="hidden" name="idPagamento" id="inputPagamento" onload="getPagamentoValue()" value="">
                         <input type="hidden" name="precoPedido" id="inputTotal" onload="subTotal()" value="">

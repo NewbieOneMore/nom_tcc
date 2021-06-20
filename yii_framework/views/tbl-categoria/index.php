@@ -21,7 +21,14 @@ $this->title = 'Categorias';
             ['class' => 'yii\grid\SerialColumn'],
 
             //'idCategoria',
-            'nomeCategoria',
+            //'nomeCategoria',
+            [
+                'attribute' => 'nomeCategoria',
+                'header' => 'Categoria',
+                'headerOptions' => [
+                    'style' => 'width: 80%;'
+                ],
+            ],
 
             ['class' => 'yii\grid\ActionColumn', 'template' => '{delete}'],
         ],

@@ -193,7 +193,7 @@ class TblProdutoUsuarioController extends Controller
                 $data->save(false);
             }
             $cart->removeAll();
-            return $this->actionIndex();
+            return $this->redirect('/nom_tcc/yii_framework/web/tbl-produto-usuario/');
         }
         echo '<script>alert("O carrinho está vazio")</script>';
         return $this->actionIndex();

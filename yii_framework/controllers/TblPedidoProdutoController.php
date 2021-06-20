@@ -88,7 +88,7 @@ class TblPedidoProdutoController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             /* return $this->redirect(['index', 'id' => $model->idPedidoProduto]); */
-            return Yii::$app->getResponse()->redirect('http://localhost/nom_tcc/yii_framework/web/index.php/tbl-pedido');
+            return Yii::$app->getResponse()->redirect('/nom_tcc/yii_framework/web/tbl-pedido');
         }
 
         return $this->render('update', [
@@ -108,34 +108,6 @@ class TblPedidoProdutoController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
-    }
-
-    public function actionFeed()
-    {
-        $api = new \RestClient([
-            'base_url' => 'http://localhost/nom_tcc/yii_framework/web/api',
-            'headers' => [
-                'Accept' => 'application/json' 
-            ]
-        ]);
-        
-        $hoje = date("Y-m-d");
-        $quantidade = 1;
-        $valorProd = 4;
-        $valortotal = $valorProd*$quantidade;
-        $api->post('pedidoproduto/create', [
-            
-            'idPedido' => '54',
-            'idProduto' => '2',
-            'qtdProduto' => $quantidade,
-            'valorProduto' => $valortotal,
-            'retProduto' => 0,
-        ]);
-
-        $result = $api->get('/pedidoproduto');
-        echo '<pre>'; print_r($result->response); die;
-
-        return $this->render('feed');
     }
 
     /**

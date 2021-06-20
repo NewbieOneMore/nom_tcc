@@ -37,6 +37,7 @@ class TblCategoriaController extends Controller
     {
         $dataProvider = new ActiveDataProvider([
             'query' => TblCategoria::find(),
+            'pagination' => false,
         ]);
 
         return $this->renderAjax('index', [

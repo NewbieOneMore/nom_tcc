@@ -47,18 +47,11 @@ $this->title = 'Carrinho';
                 <div class="col-md-3">
                     <div class="input-group quantity" style="display: flex; margin-top: 15px;">
 
-
-                        <!-- <div class="input-group-prepend decrement-btn" style="cursor: pointer;">
-                        <span class="btn btn-info"><strong>-</strong></span>
-                    </div> -->
                         <input type="hidden" name="idProduto[]" id="inputQuantidade" class="idProduto" value="<?= $row->idProduto?>">
                         <input type="hidden" name="precoProduto[]" id="inputQuantidade" class="idProduto" value="<?= $row->precoProduto?>">
                         <input type="number" name="quantidade[]" id="inputQuantidade" class="qty-input form-control" onchange='subTotal()' min="1" max="<?= $row->estqProduto ?>" value="1" style="text-align: center; width:60%;">
                         <input type="hidden" name="idPagamento" id="inputPagamento" onload="getPagamentoValue()" value="">
                         <input type="hidden" name="precoPedido" id="inputTotal" onload="subTotal()" value="">
-                        <!-- <div class="input-group-append increment-btn" style="cursor: pointer;">
-                        <span class="btn btn-info"><strong>+</strong></span>
-                    </div> -->
 
                     </div>
                     <input type="hidden" class="itotal" />
@@ -80,10 +73,10 @@ $this->title = 'Carrinho';
         <input type="submit" class="btn btn-success" onclick="getPagamentoValue()" value="Finalizar Pedido">
 
         <h3 style="float: right;">
-            <input class="pagamento" type="radio" name="pagamento" value="1" /> À Vista
-            <input class="pagamento" type="radio" name="pagamento" value="2" /> Crédito
-            <input class="pagamento" type="radio" name="pagamento" value="3" /> Débito
-            <input class="pagamento" type="radio" name="pagamento" value="4" checked="true"/> Pix
+            <input class="pagamento" type="radio" name="pagamento" id="a vista" value="1" /> À Vista
+            <input class="pagamento" type="radio" name="pagamento" id="credito" value="2" /> Crédito
+            <input class="pagamento" type="radio" name="pagamento" id="debito" value="3" /> Débito
+            <input class="pagamento" type="radio" name="pagamento" id="pix" value="4" checked="true"/> Pix
         </h3>
 
         <input type="hidden" id="inputPagamento" value="">

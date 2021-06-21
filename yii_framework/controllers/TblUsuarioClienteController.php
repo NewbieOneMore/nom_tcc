@@ -79,7 +79,7 @@ class TblUsuarioClienteController extends Controller
         $model = new tblUsuarioCliente();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->idUsuario]);
+            return $this->redirect(['/nom_tcc/yii_framework/web/site/login']);
         }
 
         return $this->render('create', [

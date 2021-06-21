@@ -14,7 +14,7 @@ $this->title = 'Login';
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Por favor, digite seu usuário e senha para logar::</p>
+    <p>Por favor, digite seu usuário e senha para logar:</p>
 
     <?php $form = ActiveForm::begin([
         'id' => 'login-form',

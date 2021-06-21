@@ -48,6 +48,7 @@ class TblPedidoProdutoSearch extends TblPedidoProduto
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => false,
         ]);
 
         $this->load($params);
@@ -71,6 +72,8 @@ class TblPedidoProdutoSearch extends TblPedidoProduto
         ]);
         
         $query->andFilterWhere(['like', 'nomeProduto', $this->idProduto]);
+
+        $query->orderBy('idPedido DESC');
 
         return $dataProvider;
     }

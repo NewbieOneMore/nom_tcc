@@ -48,6 +48,7 @@ class TblProdutoUsuarioController extends Controller
     {
         $dataProvider = new ActiveDataProvider([
             'query' => TblProdutoUsuario::find(),
+            'pagination' => false,
         ]);
 
         return $this->render('index', [
@@ -167,23 +168,24 @@ class TblProdutoUsuarioController extends Controller
     {
         $cart = new ShoppingCart();
         $data = $cart->getPositions();
-        if (count($data) > 0) {
+        if (count($data) != 0) {
             $idpagamento = (int)$_POST['idPagamento'];
             $precoPedido = (float)$_POST['precoPedido'];
             $quantidade = $_POST['quantidade'];
             $idProduto = $_POST['idProduto'];
             $pedido = new TblPedido();
-            $idUsuario = Yii::$app->user->identity->id;
-            $pedido->idUsuario = $idUsuario;
+            $pedido->idUsuario = Yii::$app->user->identity->id;
             $pedido->dataPedido = date('Y-m-d H:i:s');
             $pedido->precoPedido = $precoPedido;
             $pedido->idPagamento = $idpagamento;
             $pedido->pagPedido = 0;
             $pedido->save();
+            $pedido->refresh();
+            $id_pedido = $pedido->idPedido;
             foreach ($cart->getPositions() as $i => $data) {
                 $i = array_search($i, $idProduto);
                 $pedidoproduto = new TblPedidoProduto();
-                $pedidoproduto->idPedido = $pedido->idPedido;
+                $pedidoproduto->idPedido = $id_pedido;
                 $pedidoproduto->idProduto = $data->idProduto = $data->id;
                 $data->estqProduto -= $quantidade[$i];            
                 $cart->put($data, $quantidade[$i]);
@@ -209,7 +211,7 @@ class TblProdutoUsuarioController extends Controller
                 'data' => $data,
             ]);
         } else {
-            return $this->actionIndex();
+            return $this->redirect('/nom_tcc/yii_framework/web/tbl-produto-usuario/');
         }
     }
     /**

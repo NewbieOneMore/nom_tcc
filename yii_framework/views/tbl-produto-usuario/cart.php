@@ -10,7 +10,7 @@ use yii\bootstrap\ActiveField;
 
 $this->title = 'Carrinho';
 ?>
-<?= Html::a('Voltar', ['index'], ['class' => 'btn btn-primary']) ?>
+<?= Html::a('Voltar', ['tbl-produto-usuario/'], ['class' => 'btn btn-primary']) ?>
 <div class="tbl-produto-usuario-index">
     <?php
     $precoTotal = 0;
@@ -79,10 +79,10 @@ $this->title = 'Carrinho';
         <input type="submit" class="btn btn-success" onclick="getPagamentoValue()" value="Finalizar Pedido">
 
         <h3 style="float: right;">
-            <input class="pagamento" type="radio" name="pagamento" value="1" checked="true"/> À Vista
+            <input class="pagamento" type="radio" name="pagamento" value="1" /> À Vista
             <input class="pagamento" type="radio" name="pagamento" value="2" /> Crédito
             <input class="pagamento" type="radio" name="pagamento" value="3" /> Débito
-            <input class="pagamento" type="radio" name="pagamento" value="4" /> Pix
+            <input class="pagamento" type="radio" name="pagamento" value="4" checked="true"/> Pix
         </h3>
 
         <input type="hidden" id="inputPagamento" value="">

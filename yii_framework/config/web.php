@@ -13,7 +13,6 @@ $config = [
     ],
     'language' => 'pt_BR',
     'sourceLanguage' => 'pt-BR',
-    'timeZone' => 'America/Sao_Paulo', 
     
     'components' => [
         'request' => [
@@ -22,7 +21,9 @@ $config = [
             'enableCsrfValidation' => false,
         ],
         'formatter' => [
-            'dateFormat' => 'dd/MM/YYYY'
+            'dateFormat' => 'dd/MM/YYYY',
+            'datetimeFormat' => 'php:d/m/Y H:i:s',
+            'timeZone' => 'America/Lima', 
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',

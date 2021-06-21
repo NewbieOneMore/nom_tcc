@@ -74,6 +74,8 @@ class TblPedidoSearch extends TblPedido
         
         $query->andFilterWhere(['like', 'nomeUsuario', $this->idUsuario]);
 
+        $query->orderBy('dataPedido DESC');
+
         return $dataProvider;
     }
 }

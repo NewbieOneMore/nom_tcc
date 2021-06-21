@@ -15,10 +15,13 @@ $this->title = 'Cardápio';
 
     <h1><?= Html::encode($this->title) ?></h1> 
 
-    <p><a class="btn btn-success" 
-          href="cart"
-          style="float: right; margin-top: -40px;">(<?= TblProdutoUsuarioController::getCount();?>) Meu Carrinho</a>
-    </p>
+    <?php $itens = TblProdutoUsuarioController::getCount();
+        if($itens > 0) : ?>
+        <p><a class="btn btn-success"
+        href="tbl-produto-usuario/cart"
+        style="float: right; margin-top: -40px;">(<?=$itens?>) Meu Carrinho</a>
+        </p>
+    <?php endif ?>
 
     <?= ListView::widget([
         'dataProvider' => $dataProvider,

@@ -82,7 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'style' => 'text-align: center;
                                 width: 15%;'
                 ],
-                'format' => ['date', 'dd/MM/YYYY'],
+                'format' => ['datetime'],
                 'filter'=>DatePicker::widget([
                     'model' => $searchModel,
                     'attribute' => 'dataPedido',

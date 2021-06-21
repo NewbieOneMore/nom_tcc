@@ -10,7 +10,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use tcdent\php,restclient\RestClient;
+use tcdent\php, restclient\RestClient;
 
 class SiteController extends Controller
 {
@@ -70,6 +70,10 @@ class SiteController extends Controller
     {
         return $this->render('home');
     }
+    public function actionClientHome()
+    {
+        return $this->render('/nom_tcc/yii_framework/web/site/home');
+    }
 
     /**
      * Login action.
@@ -78,13 +82,11 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1) {
-            return $this->redirect('/nom_tcc/yii_framework/web/');
-        } if (!Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0) {
-            return $this->redirect(['/nom_tcc/yii_framework/web/site/home']);
-        }   
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            if (!Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0) {
+                return $this->actionHome();
+            }
             return $this->goBack();
         }
 

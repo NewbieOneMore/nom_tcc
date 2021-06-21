@@ -10,7 +10,7 @@ $idUsuario = Yii::$app->user->identity->id;
     <div class="jumbotron">
         <h1>Cantina do Henrique</h1>
 
-        <p class="lead">Seja Bem-Vindo!</p>
+        <p class="lead">Seja Bem-Vindo, <?= Yii::$app->user->identity->nomeUsuario ?>!</p>
     </div>
 
     <div class="body-content" style="text-align: center;">
@@ -19,7 +19,7 @@ $idUsuario = Yii::$app->user->identity->id;
             <div class="col-lg-6">  
                 <h2>Realizar um pedido</h2>
 
-                <p>Cardápio com os produtos para realizar um pedido</p>
+                <p>Cardápio com todos os nossos produtos</p>
 
                 <p><a class="btn btn-lg btn-success" href="/nom_tcc/yii_framework/web/tbl-produto-usuario">Cardápio</a></p>
             </div>

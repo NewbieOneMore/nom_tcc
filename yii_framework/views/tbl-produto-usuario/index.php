@@ -12,7 +12,9 @@ use app\controllers\TblProdutoUsuarioController;
 $this->title = 'Cardápio';
 ?>
 <div class="tbl-produto-usuario-index"> 
-
+    <p>
+        <?= Html::a('Voltar', ['/site/home'], ['class' => 'btn btn-primary']) ?>
+    </p>
     <h1><?= Html::encode($this->title) ?></h1> 
 
     <?php $itens = TblProdutoUsuarioController::getCount();
@@ -26,9 +28,9 @@ $this->title = 'Cardápio';
     <?= ListView::widget([
         'dataProvider' => $dataProvider,
         'itemView' => '_item',
-        'separator' => "<hr/>",
+        //'separator' => "<hr/>",
         //'options' => ['class' => 'list-view well', 'style' => 'background-color: #dddddd'],
-        'itemOptions' => ['class' => 'well']
+        //'itemOptions' => ['class' => 'well',]
     ]); ?>
 
 </div>

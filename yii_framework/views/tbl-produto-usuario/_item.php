@@ -1,7 +1,8 @@
 <?php 
 use yii\helpers\Html;
 ?>
-<div class="produtos">
+<?php if ($model->estqProduto > 0) :?>
+<div class="well">
     <h2><?= Html::encode($model->nomeProduto) ?></h2>
     <strong> 
         Preço: R$<?= number_format($model->precoProduto, 2,",",".");?>
@@ -12,5 +13,5 @@ use yii\helpers\Html;
     </p>
     
     <?= Html::a('+ Adicionar ao Carrinho', ['add-to-cart', 'idProduto' => $model->idProduto], ['class'=>'btn btn-primary'])?>
-
 </div>
+<?php endif ?>

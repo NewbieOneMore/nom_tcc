@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Yii;
+use app\assets\AppAsset;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
@@ -77,8 +78,10 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
+        if (!Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1) {
+            return $this->redirect('/nom_tcc/yii_framework/web/');
+        } if (!Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0) {
+            return $this->redirect(['/nom_tcc/yii_framework/web/site/home']);
         }   
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {

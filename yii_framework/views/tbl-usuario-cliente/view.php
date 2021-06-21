@@ -26,7 +26,7 @@ $this->title = $model->nomeUsuario;
             //'idUsuario',
             'nomeUsuario',
             'emailUsuario:email',
-            'senhaUsuario',
+            //'senhaUsuario',
             //'authkeyUsuario',
             //'accesstokenUsuario',
             //'admUsuario:boolean',

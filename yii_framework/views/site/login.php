@@ -36,11 +36,7 @@ $this->title = 'Login';
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
                 <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-lg-offset-1 col-lg-11">
-            <?= Html::a('cadastrar-se', ['tbl-usuario-cliente/create'], ['class'=>'btn btn-primary'])?>
+                <?= Html::a('Cadastrar-se', ['tbl-usuario-cliente/create'], ['class'=>'btn btn-primary', 'style' => 'margin-left: 10px;'])?>
             </div>
         </div>
     <?php ActiveForm::end(); ?>

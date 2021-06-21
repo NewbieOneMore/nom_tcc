@@ -181,7 +181,7 @@ class TblProdutoUsuarioController extends Controller
             $pedido->pagPedido = 0;
             $pedido->save();
             $pedido->refresh();
-            $id_pedido = $pedido->idPedido;
+            $id_pedido = $pedido->getPrimaryKey();
             foreach ($cart->getPositions() as $i => $data) {
                 $i = array_search($i, $idProduto);
                 $pedidoproduto = new TblPedidoProduto();

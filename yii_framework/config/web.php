@@ -73,7 +73,7 @@ $config = [
         'class' => \yii\filters\AccessControl::className(),
         'rules' => [
             [
-                'actions' => ['login', 'error'],
+                'actions' => ['login', 'error', 'create', 'view', 'tbl-usuario-cliente'],
                 'allow' => true,
             ],
             [

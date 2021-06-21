@@ -60,10 +60,6 @@ AppAsset::register($this);
              'url' => ['/tbl-pedido'], 
              'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
             ],
-            ['label' => 'Pedidos',
-             'url' => ['/tbl-pedido'], 
-             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
-            ],
 
             ['label' => 'Produto',
              'url' => ['/tbl-produto'], 
@@ -78,12 +74,12 @@ AppAsset::register($this);
             ],
 
             ['label' => 'Cardápio', 
-            'url' => ['/tbl-usuario'], 
+            'url' => ['/tbl-produto-usuario'], 
             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
             ],
 
             ['label' => 'Meu Perfil', 
-            'url' => ['/tbl-usuario'], 
+            'url' => ['/tbl-usuario-cliente/view?id='], 
             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
             ],
 

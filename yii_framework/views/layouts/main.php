@@ -30,10 +30,26 @@ AppAsset::register($this);
     <?php
     //if(AppAsset::register($this) == Tbl)
     NavBar::begin([
-        'brandLabel' => "Cantina do Henrique",
+        'brandLabel' => "",
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-left'],
+        'items' => [
+            //Botão adm
+            ['label' => 'Cantina do Henrique', 
+            'url' => ['/site'],
+            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
+            ],
+
+            //Botão cliente
+            ['label' => 'Cantina do Henrique', 
+            'url' => ['/site/home'],
+            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
+            ],
         ],
     ]);
     echo Nav::widget([
@@ -42,29 +58,33 @@ AppAsset::register($this);
             //['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Pedidos',
              'url' => ['/tbl-pedido'], 
-             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1
+             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
+            ],
+            ['label' => 'Pedidos',
+             'url' => ['/tbl-pedido'], 
+             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
             ],
 
             ['label' => 'Produto',
              'url' => ['/tbl-produto'], 
-             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1
+             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
             ],
 
             //['label' => 'Categoria', 'url' => ['/tbl-categoria']],
             //['label' => 'Pagamento', 'url' => ['/tbl-pagamento']],
             ['label' => 'Usuários', 
             'url' => ['/tbl-usuario'], 
-            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1
+            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
             ],
 
             ['label' => 'Cardápio', 
             'url' => ['/tbl-usuario'], 
-            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0
+            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
             ],
 
             ['label' => 'Meu Perfil', 
             'url' => ['/tbl-usuario'], 
-            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0
+            'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
             ],
 
             Yii::$app->user->isGuest ? (

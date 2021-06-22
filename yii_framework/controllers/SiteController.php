@@ -85,7 +85,7 @@ class SiteController extends Controller
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             if (!Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0) {
-                return $this->actionHome();
+                return $this->redirect('/nom_tcc/yii_framework/web/site/home');
             }
             return $this->goBack();
         }

@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'emailUsuario')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'senhaUsuario')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'senhaUsuario')->passwordInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Cadastrar', ['class' => 'btn btn-success']) ?>

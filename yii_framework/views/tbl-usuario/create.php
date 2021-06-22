@@ -6,8 +6,12 @@ use yii\helpers\Html;
 /* @var $model app\models\TblUsuario */
 
 $this->title = 'Cadastrar Usuário';
+
+if (!Yii::$app->user->isGuest) :
 $this->params['breadcrumbs'][] = ['label' => 'Usuários', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+endif
+
 ?>
 <div class="tbl-usuario-create">
 

@@ -10,7 +10,7 @@ $idUsuario = Yii::$app->user->identity->id;
     <div class="jumbotron">
         <h1>Cantina do Henrique</h1>
 
-        <p class="lead">Seja Bem-Vindo, <?= Yii::$app->user->identity->nomeUsuario ?>!</p>
+        <p class="lead">Seja Bem-Vindo(a), <?= Yii::$app->user->identity->nomeUsuario ?>!</p>
     </div>
 
     <div class="body-content" style="text-align: center;">

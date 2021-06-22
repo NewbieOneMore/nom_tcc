@@ -55,7 +55,6 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            //['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Pedidos',
              'url' => ['/tbl-pedido'], 
              'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
@@ -66,8 +65,6 @@ AppAsset::register($this);
              'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
             ],
 
-            //['label' => 'Categoria', 'url' => ['/tbl-categoria']],
-            //['label' => 'Pagamento', 'url' => ['/tbl-pagamento']],
             ['label' => 'Usuários', 
             'url' => ['/tbl-usuario'], 
             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 1,
@@ -77,9 +74,9 @@ AppAsset::register($this);
             'url' => ['/tbl-produto-usuario'], 
             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
             ],
-
-            ['label' => 'Meu Perfil', 
-            'url' => ['/tbl-usuario-cliente/view?id='], 
+            
+            ['label' => 'Minha Conta',
+            'url' => ['/tbl-usuario-cliente/view?id=6'], 
             'visible' => !Yii::$app->user->isGuest && Yii::$app->user->identity->admUsuario == 0,
             ],
 

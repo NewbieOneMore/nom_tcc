@@ -67,6 +67,9 @@ class TblUsuarioController extends Controller
         $model = new TblUsuario();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            if(Yii::$app->user->isGuest){
+                return $this->redirect(['/site/login']);
+            }
             return $this->redirect(['view', 'id' => $model->idUsuario]);
         }
 

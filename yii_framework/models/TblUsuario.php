@@ -93,9 +93,9 @@ class TblUsuario extends \yii\db\ActiveRecord implements IdentityInterface
         return $this->authkeyUsuario === $authkeyUsuario;
     }
 
-    public static function findByUsername($nomeUsuario)
+    public static function findByUsername($emailUsuario)
     {
-       return static::findOne(['nomeUsuario' => $nomeUsuario]);
+       return static::findOne(['emailUsuario' => $emailUsuario]);
     }
 
     public function RandomPassword()
